@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Workflow"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="Lib/BaseMeasurement-1.1.0.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-math3-3.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-math3-3.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="Lib/Jama-1.0.3.jar"/>
+	<classpathentry kind="lib" path="KUKAJavaLib/javax.inject_1.0.0.v20091030.jar"/>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.command.api_1.0.0.13.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.command.api_1.0.0.13-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.common.api_2.0.0.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.common.api_2.0.0.15-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.common.datatypes_1.15.0.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.common.datatypes_1.15.0.15-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.common.utilities_1.5.0.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.common.utilities_1.5.0.15-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.mastering.provider.api_1.5.0.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/#Bundle-JavaDoc#!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.appdata.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.appdata.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.comm.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.comm.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.fineloc.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.fineloc.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.fleet.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.fleet.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.free.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.free.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.graph_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.graph_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.kmp.omnimove200.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.kmp.omnimove200.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.lift.api_1.0.0.buildV110_10.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.lift.api_1.0.0.buildV110_10-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.maintenance.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.maintenance.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.maintenance.backup.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.maintenance.backup.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.object.handling.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.object.handling.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.object.manager.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.object.manager.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.systemfailure.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.systemfailure.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.systemfailureevent.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.systemfailureevent.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.task.remote.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.task.remote.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.virtualLine.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.virtualLine.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.nav.virtualPath.api_1.0.0.buildV110_8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.nav.virtualPath.api_1.0.0.buildV110_8-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.resource.api_1.0.0.13.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.resource.api_1.0.0.13-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.roboticsAPI_1.15.2.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.roboticsAPI_1.15.2.15-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.roboticsAPI.kmpOmniMove_1.15.0.buildSEM_R15_7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.roboticsAPI.kmpOmniMove_1.15.0.buildSEM_R15_7-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.roboticsAPI.liftingDevice_1.15.0.buildSEM_R15_7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.roboticsAPI.liftingDevice_1.15.0.buildSEM_R15_7-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.sunrise.common_1.0.0.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.sunrise.common_1.0.0.15-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.task.api_1.0.0.13.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/com.kuka.task.api_1.0.0.13-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="KUKAJavaLib/com.kuka.jogging.provider.api_1.0.0.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KMR_Everton/KUKAJavaLib/#Bundle-JavaDoc#!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

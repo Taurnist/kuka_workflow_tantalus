@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="ExternalControl" IconName="ExternalControl" SignalTypes="InOut" TemplateName="ExternalControl">
+    <IOs>
+      <DigitalIOItem Name="AutExt_Active" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="AutExt_AppR2S" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="DefaultApp_Error" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Station_Error" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="App_Start" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="App_Enable" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="PlatformReleased" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>This state is "true" when the Vehicle is unlocked.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MotionEnable" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Is "true" when the Safety of the Vehicle is Ok.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="EnableNavigationControl" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Navigation can control the AGV in operating mode T1/T2/KRF</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ChargingRelayEnabled" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Enables the charging relay.</Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>Contains the Automatic Extern Interface and some basic information between Sunrise and PLC</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

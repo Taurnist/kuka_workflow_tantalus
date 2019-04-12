@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConfigurationProject>
+    <TopologyItem itemPath="com.kuka/Project" name="Project" selectedVersion="1" uniqueID="">
+        <TopologyItem itemPath="com.kuka/NavServer" name="NavServer" selectedVersion="1" uniqueID="3103e7b7-993c-44b4-89af-1ae06ba7f8c4">
+            <Interface id="com.kuka/MobileRobot/Simulation" version="0.1.0"/>
+            <Interface id="com.kuka/Database/OmniMoveLimitedAgv" version="0.1.0"/>
+            <Interface id="com.kuka/Navigation/Database" version="0.1.0"/>
+            <Interface id="com.kuka/Database/youBot" version="0.1.0"/>
+            <Interface id="com.kuka/Navigation/Windows" version="0.1.0"/>
+            <Interface id="com.kuka/Database/TrainingOmniMove" version="0.1.0"/>
+            <Interface id="com.kuka/Database/KMPomniMove1500" version="0.1.0"/>
+            <Interface id="com.kuka/Database/OmniMoveServiceAgv" version="0.1.0"/>
+            <Interface id="com.kuka/Database/OmniRob" version="0.1.0"/>
+            <Interface id="com.kuka/Database/CarryProV2" version="0.1.0"/>
+            <Interface id="com.kuka/Database/NavigationServer" version="0.1.0"/>
+            <Interface id="com.kuka/Database/KMPomniMove200" version="0.1.0"/>
+            <Interface id="com.kuka/Database/CarryPro" version="0.1.0"/>
+            <Interface id="com.kuka/Controller/Ethernet" version="0.1.0"/>
+            <Interface id="com.kuka/Database/DesignerCarry" version="0.1.0"/>
+            <Interface id="com.kuka/Controller/Windows" version="0.1.18"/>
+            <Interface id="com.kuka/NavigationServer/Windows" version="0.1.0"/>
+            <Interface id="com.kuka/Database/OmniMove" version="0.1.0"/>
+            <Interface id="com.kuka/Database/OmniMoveUpperAgv" version="0.1.0"/>
+            <Interface id="com.kuka/Database/OmniMove68tSpindle" version="0.1.0"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Autonomous Motion Support" installItem="true" installedVersion="1" itemPath="com.kuka/AutonomousMotion" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Catalog Installation" installItem="true" installedVersion="NONE" itemPath="com.kuka/CatalogInstallationScripts" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Support Diagnostics NavServer" installItem="true" installedVersion="1" itemPath="com.kuka/DiagnosticsNavServer" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav FDI Support" installItem="true" installedVersion="1" itemPath="com.kuka/FDI" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Finelocalization Support" installItem="true" installedVersion="1" itemPath="com.kuka/Finelocalization" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Fleet Manager (Extension)" installItem="true" installedVersion="1" itemPath="com.kuka/FleetManagerNavServer" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Fleet Simulation Support" installItem="false" installedVersion="NONE" itemPath="com.kuka/FleetSimulation" selectedVersion="NONE" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="InjectionLib" installItem="true" installedVersion="1" itemPath="com.kuka/InjectionLib" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/InjectionLib/InjectionLib" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Java Runtime Environment" installItem="true" installedVersion="NONE" itemPath="com.kuka/JRE" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Jay Remote Control Support Compounds" installItem="true" installedVersion="NONE" itemPath="com.kuka/JaySupportCompounds" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="false" canChangeSelection="true" displayName="VMS Navigation Support KMP omniMove 1500 Lift" installItem="false" installedVersion="NONE" itemPath="com.kuka/KMP1500NavLiftSupportOnVMS" selectedVersion="NONE" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KMPIni" installItem="true" installedVersion="NONE" itemPath="com.kuka/KMPIni" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Support KMP omniMove Base API" installItem="true" installedVersion="1" itemPath="com.kuka/KMPOmniMoveBaseAPI" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KMP OmniMove SmartHMI" installItem="true" installedVersion="NONE" itemPath="com.kuka/KMPOmniMoveSmartHMI" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KMP 1500 Lift OmniMove Support" installItem="true" installedVersion="2" itemPath="com.kuka/KmpOmniMove1500NavLiftSupport" selectedVersion="2" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KMP 1500 OmniMove Support" installItem="true" installedVersion="2" itemPath="com.kuka/KmpOmniMove1500Support" selectedVersion="2" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KMP 200 OmniMove Support" installItem="true" installedVersion="2" itemPath="com.kuka/KmpOmniMove200Support" selectedVersion="2" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KrcDiag" installItem="true" installedVersion="NONE" itemPath="com.kuka/KrcDiag" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Lift Support" installItem="true" installedVersion="1" itemPath="com.kuka/Lift" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="MaintenanceApi" installItem="true" installedVersion="1" itemPath="com.kuka/MaintenanceApi" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="MaintenanceBackupApi" installItem="true" installedVersion="1" itemPath="com.kuka/MaintenanceBackupApi" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Support Database Backup NavServer" installItem="true" installedVersion="1" itemPath="com.kuka/MaintenanceBackupNavServer" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Support Maintenance DB UI" installItem="true" installedVersion="1" itemPath="com.kuka/MaintenanceDatabaseUI" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Support Maintenance NavServer" installItem="true" installedVersion="1" itemPath="com.kuka/MaintenanceNavServer" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Mapping Support" installItem="true" installedVersion="1" itemPath="com.kuka/MappingSupport" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="TimeSynchronization" installItem="true" installedVersion="1" itemPath="com.kuka/NTPd" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavBaseDB" installItem="true" installedVersion="1" itemPath="com.kuka/NavBaseDB" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavBaseDB/NavBaseDB" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavBaseDBDataKMPomniMove1500" installItem="true" installedVersion="1" itemPath="com.kuka/NavBaseDBDataKMPomniMove1500" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavBaseDBDataKMPomniMove1500/NavBaseDBDataKMPomniMove1500" version="0.1.0"/>
+                <Interface id="com.kuka/NavBaseDBData/NavBaseDBData" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavBaseDBDataKMPomniMove200" installItem="true" installedVersion="1" itemPath="com.kuka/NavBaseDBDataKMPomniMove200" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavBaseDBData/NavBaseDBData" version="0.1.0"/>
+                <Interface id="com.kuka/NavBaseDBDataKMPomniMove200/NavBaseDBDataKMPomniMove200" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavBaseDBDataNavigationServer" installItem="true" installedVersion="1" itemPath="com.kuka/NavBaseDBDataNavigationServer" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavBaseDBData/NavBaseDBData" version="0.1.0"/>
+                <Interface id="com.kuka/NavBaseDBDataNavigationServer/NavBaseDBDataNavigationServer" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavBaseDBUpgrade" installItem="true" installedVersion="1.0" itemPath="com.kuka/NavBaseDBUpgrade" selectedVersion="1.0" usage="Library">
+                <Interface id="com.kuka/NavBaseDBUpgrade/NavBaseDBUpgrade" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavBoxDiagnostics" installItem="true" installedVersion="NONE" itemPath="com.kuka/NavBoxDiagnostics" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Deployment Support" installItem="true" installedVersion="1" itemPath="com.kuka/NavDeployment" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Remote Tasks Support" installItem="true" installedVersion="1" itemPath="com.kuka/NavRemoteTasks" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Application Templates" installItem="false" installedVersion="NONE" itemPath="com.kuka/NavigationApplicationTemplateV2" selectedVersion="NONE" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationDatabaseUtils" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationDatabaseUtils" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationDatabaseUtils/NavigationDatabaseUtils" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationInstallationCleanUp" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationInstallationCleanUp" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationInstallationCleanUp/NavigationInstallationCleanUp" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationInstallationServer" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationInstallationServer" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationInstallationServer/NavigationInstallationServer" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerIni" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerIni" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerIni/NavigationServerIni" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerIpcCentral" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerIpcCentral" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerIpcCentral/NavigationServerIpcCentral" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerLibs" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerLibs" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerLibs/NavigationServerLibs" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerLocalCentral" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerLocalCentral" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerLocalCentral/NavigationServerLocalCentral" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerModuleManager" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerModuleManager" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerModuleManager/NavigationServerModuleManager" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerModuleTerminator" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerModuleTerminator" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerModuleTerminator/NavigationServerModuleTerminator" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationServerSoftware" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationServerSoftware" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationServerSoftware/NavigationServerSoftware" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="NavigationStarter" installItem="true" installedVersion="1" itemPath="com.kuka/NavigationStarter" selectedVersion="1" usage="Library">
+                <Interface id="com.kuka/NavigationStarter/NavigationStarter" version="0.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Object Handling Support" installItem="true" installedVersion="1" itemPath="com.kuka/ObjectHandling" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Object Manager Support Api" installItem="true" installedVersion="1" itemPath="com.kuka/ObjectManager" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Object Manager Support Server" installItem="true" installedVersion="1" itemPath="com.kuka/ObjectManagerServer" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Nav Object Template Manager Support" installItem="true" installedVersion="1" itemPath="com.kuka/ObjectTemplateManager" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="PlatformShared" installItem="true" installedVersion="NONE" itemPath="com.kuka/PlatformShared" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="PowerManagementService" installItem="true" installedVersion="NONE" itemPath="com.kuka/PowerManagementService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="SmartHMI PDS-Firmware Update" installItem="true" installedVersion="NONE" itemPath="com.kuka/SmartHMIPdsFirmwareUpdate" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="SmartPad Application" installItem="true" installedVersion="NONE" itemPath="com.kuka/SmartPadApplication" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="SmartPad Bootloader" installItem="true" installedVersion="NONE" itemPath="com.kuka/SmartPadBootloader" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="SmartPad Image" installItem="true" installedVersion="NONE" itemPath="com.kuka/SmartPadImage" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="SmartPadService" installItem="true" installedVersion="NONE" itemPath="com.kuka/SmartPadService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="StartKRC" installItem="true" installedVersion="NONE" itemPath="com.kuka/StartKRC" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="KUKA Sunrise.StatusController" installItem="false" installedVersion="NONE" itemPath="com.kuka/StatusController" selectedVersion="NONE" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="SystemFailureEventApi" installItem="true" installedVersion="1" itemPath="com.kuka/SystemFailureEventApi" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="System Failure Event API NavServer" installItem="true" installedVersion="1" itemPath="com.kuka/SystemFailureNavServer" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="VMS" installItem="true" installedVersion="1.0.0" itemPath="com.kuka/VMS" selectedVersion="1.0.0" usage="Library">
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.continuation" version="8.1.15"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.core.runtime" version="3.7.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.annotations" version="8.1.15"/>
+                <Interface id="com.kuka/OSGi/javax.inject" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.eclipse.core.runtime.spi" version="3.4.0"/>
+                <Interface id="com.kuka/OSGi/org.slf4j.helpers" version="1.7.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.servlet" version="8.1.15"/>
+                <Interface id="com.kuka/OSGi/com.google.inject.internal" version="1.3.0"/>
+                <Interface id="com.kuka/OSGi/com.google.inject" version="1.3.0"/>
+                <Interface id="com.kuka/SmartHMIApplicationFramework/SmartHMIApplicationFramework" version="1.1.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jgit" version="3.5.1"/>
+                <Interface id="com.kuka/OSGi/org.eclipse.core.runtime" version="3.4.0"/>
+                <Interface id="com.kuka/OSGi/javax.servlet.http" version="2.6.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.http" version="8.1.15"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.io" version="8.1.15"/>
+                <Interface id="com.kuka/OSGi/org.osgi.framework.startlevel" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.eclipse.osgi.framework.console" version="1.1.0"/>
+                <Interface id="com.kuka/OSGi/org.osgi.service.cm" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.google.inject" version="3.0.0"/>
+                <Interface id="com.kuka/OSGi/org.osgi.service.prefs" version="1.1.1"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.security" version="8.1.15"/>
+                <Interface id="com.kuka/OSGi/org.eclipse.osgi.util" version="1.1.0"/>
+                <Interface id="com.kuka/OSGi/javax.servlet" version="2.6.0"/>
+                <Interface id="com.kuka/OSGi/org.osgi.service.component" version="1.1.0"/>
+                <Interface id="com.kuka/OSGi/org.apache.felix.scr" version="1.6.0"/>
+                <Interface id="com.kuka/OSGi/org.osgi.framework.wiring" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.slf4j" version="1.7.0"/>
+                <Interface id="com.kuka/OSGi/com.google.inject.name" version="1.3.0"/>
+                <Interface id="com.kuka/OSGi/org.eclipse.core.runtime.dynamichelpers" version="3.4.0"/>
+                <Interface id="com.kuka/Bundle/javax.inject" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.osgi.framework" version="1.6.0"/>
+                <Interface id="com.kuka/OSGi/VMS" version="2.0.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.util" version="8.1.15"/>
+                <Interface id="com.kuka/OSGi/com.google.inject.spi" version="1.3.0"/>
+                <Interface id="com.kuka/OSGi/com.google.inject.matcher" version="1.3.0"/>
+                <Interface id="com.kuka/Bundle/log4j" version="1.2.17"/>
+                <Interface id="com.kuka/OSGi/org.osgi.util.tracker" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.google.inject.util" version="1.3.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.equinox.registry" version="3.5.101"/>
+                <Interface id="com.kuka/OSGi/org.osgi.service.cm" version="1.3.0"/>
+                <Interface id="com.kuka/OSGi/com.google.inject.binder" version="1.3.0"/>
+                <Interface id="com.kuka/Bundle/slf4j.api" version="1.7.0"/>
+                <Interface id="com.kuka/Bundle/javax.servlet" version="3.0.0"/>
+                <Interface id="com.kuka/Bundle/org.eclipse.jetty.server" version="8.1.15"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="VMS" installItem="true" installedVersion="2" itemPath="com.kuka/VehicleManagementSystem" selectedVersion="2" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Virtual Line Motion Support" installItem="true" installedVersion="1" itemPath="com.kuka/VirtualLineMotion" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation Virtual Path Motion Support" installItem="true" installedVersion="1" itemPath="com.kuka/VirtualPathMotion" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="false" canChangeSelection="true" displayName="VMS Navigation Support KMP omniMove 1500" installItem="false" installedVersion="NONE" itemPath="com.kuka/VmsKmpOmniMove1500Support" selectedVersion="NONE" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="VMS Navigation Support KMP omniMove 200" installItem="true" installedVersion="2" itemPath="com.kuka/VmsKmpOmniMove200Support" selectedVersion="2" usage="Feature">
+                <Interface id="com.kuka/MotionCompounds/MotionCompounds" version="0.1.0"/>
+                <Interface id="com.kuka/KMPOmnimoveCompounds/KMPOmnimoveCompounds" version="0.1.0"/>
+                <Interface id="com.kuka/SunriseBasicCompounds/SunriseBasicCompounds" version="0.1.0"/>
+                <Interface id="com.kuka/SunriseFramework/SunriseAPIInterface" version="0.2.1"/>
+                <Interface id="com.kuka/SmartPadUpdater/SmartPadUpdater" version="0.1.0"/>
+                <Interface id="com.kuka/SunriseFramework/SunriseServiceRecordInterface_SSK" version="0.1.0"/>
+                <Interface id="com.kuka/SunriseFramework/SunriseServiceRecordInterface_Safety" version="0.1.1"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="false" displayName="VMS KMR Hand Guiding Support" installItem="false" installedVersion="NONE" itemPath="com.kuka/VmsKmrHandGuidingSupport" selectedVersion="NONE" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="Navigation appdata Support" installItem="true" installedVersion="1" itemPath="com.kuka/appdata" selectedVersion="1" usage="Feature"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.applicationHost.server" installItem="true" installedVersion="2.0.0.13" itemPath="com.kuka/com.kuka.applicationHost.server" selectedVersion="2.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.util.dependentComponent" version="2.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.applicationHost.server" version="2.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.applicationServer.services" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.applicationServer.services" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.applicationServer.services.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.applicationServer.services.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.applicationService" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.applicationService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.applicationService.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.applicationService.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.authorizationService" installItem="true" installedVersion="1.1.0.13" itemPath="com.kuka/com.kuka.authorizationService" selectedVersion="1.1.0.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.authorizationService" version="1.1.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.authorizationService.osgi" version="1.1.0"/>
+                <Interface id="com.kuka/com.kuka.authorizationService/BaseFeature" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.authorizationService.common" installItem="true" installedVersion="1.0.1.13" itemPath="com.kuka/com.kuka.authorizationService.common" selectedVersion="1.0.1.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.authorization.actions" version="1.0.0"/>
+                <Interface id="com.kuka/com.kuka.authorizationService.common/UserRolesXmlSchema" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.authorizationService.common.exceptions" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.authorizationService.common.model" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.authorizationService.common" version="1.0.1"/>
+                <Interface id="com.kuka/OSGi/com.kuka.authorizationService.common" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.authorizationService.ncf" installItem="true" installedVersion="1.1.0.13" itemPath="com.kuka/com.kuka.authorizationService.ncf" selectedVersion="1.1.0.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.authorizationService.ncf" version="1.1.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.authorizationService" version="1.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.command.api" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.command.api" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.parameters" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.command" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.command.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.command.provider.api" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.command.provider.api" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.parameters.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.parameters.provider.helpers" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.command.execution" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.command.provider.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.command.mapping" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.common" installItem="true" installedVersion="2.0.1.15" itemPath="com.kuka/com.kuka.common" selectedVersion="2.0.1.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.common" version="2.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.thread" version="2.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.windows" version="2.0.1"/>
+                <Interface id="com.kuka/OSGi/com.kuka.util" version="2.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.common" version="2.0.1"/>
+                <Interface id="com.kuka/OSGi/com.kuka.event" version="2.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.versioning" version="2.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.common.api" installItem="true" installedVersion="2.0.0.15" itemPath="com.kuka/com.kuka.common.api" selectedVersion="2.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.condition" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.command" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.exceptions" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.math.geometry" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.motion" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.common.api" version="2.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.geometry" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.parameters.user" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.geometry.connections" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.math.physics" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.geometry.forms" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.common.datatypes" installItem="true" installedVersion="1.15.0.15" itemPath="com.kuka/com.kuka.common.datatypes" selectedVersion="1.15.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.uiModel.userKeys" version="1.15.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.common.datatypes" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.ioModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.deviceModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.uiModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.executionModel" version="1.15.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.common.utilities" installItem="true" installedVersion="1.5.0.15" itemPath="com.kuka/com.kuka.common.utilities" selectedVersion="1.5.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.common.versioning" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.concurrent" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common" version="1.5.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.common.utilities" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.connections" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.exceptions" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.devices" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.persistence.Level3Exceptions" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.params" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.persistence" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.common.events" version="1.5.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.configuration" installItem="true" installedVersion="2.1.0.13" itemPath="com.kuka/com.kuka.configuration" selectedVersion="2.1.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.common" version="2.0.1"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.project" version="2.1.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.catalog" version="2.0.1"/>
+                <Interface id="com.kuka/Bundle/com.kuka.configuration" version="2.1.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration" version="2.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.configuration.install" installItem="true" installedVersion="2.0.2.13" itemPath="com.kuka/com.kuka.configuration.install" selectedVersion="2.0.2.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.util" version="2.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.actions.utils" version="2.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.actions" version="2.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.configuration.install" version="2.0.2"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.installation" version="2.0.1"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.configuration.manager" installItem="true" installedVersion="2.0.1.13" itemPath="com.kuka/com.kuka.configuration.manager" selectedVersion="2.0.1.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.configuration.manager" version="2.0.1"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.configurationModel.navigation" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.configurationModel.navigation" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.navigation.services" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.navigation.util" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.configuration.navigation.installation" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.configurationModel.navigation" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.connectionLib" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.connectionLib" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.deployment" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.deployment" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.deployment.errors" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.deployment.client" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.deployment.common" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.deployment" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.deployment.ioDeployment" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.deployment.ioDeployment" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.deployment.manager" installItem="true" installedVersion="1.0.1.13" itemPath="com.kuka/com.kuka.deployment.manager" selectedVersion="1.0.1.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.deployment.manager" version="1.0.1"/>
+                <Interface id="com.kuka/OSGi/com.kuka.deployment.manager" version="1.0.1"/>
+                <Interface id="com.kuka/OSGi/com.kuka.deployment.manager.repository" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.deployment.ncf" installItem="true" installedVersion="1.0.1.13" itemPath="com.kuka/com.kuka.deployment.ncf" selectedVersion="1.0.1.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.deployment.service" version="1.0.1"/>
+                <Interface id="com.kuka/Bundle/com.kuka.deployment.ncf" version="1.0.1"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.deployment.safetyDeployment" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.deployment.safetyDeployment" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.git" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.git" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.git.exceptions" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.git" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.git" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.jogging.provider.api" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.jogging.provider.api" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.jogging.provider.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.jogging.provider.api.motions" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.jogging.provider.api.common" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.mastering.provider.api" installItem="true" installedVersion="1.5.0.15" itemPath="com.kuka/com.kuka.mastering.provider.api" selectedVersion="1.5.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.mastering.provider.api.common" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.mastering.provider.api" version="1.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.mastering.provider.api.exception" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.mastering.provider.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.mastering.provider.api.features.preconditions" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.mastering.provider.api.motions" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.mastering.provider.api.features" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.honk" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.geometry" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.command" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.rel" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.resource.pool" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.task" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.recover" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.data" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.appdata" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.appdata" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.appdata.service" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.appdata.database" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.appdata" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.appdata.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.appdata.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.appdata" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.appdata.exceptions" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.appdata.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.base.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.base.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.base.handler" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.base.spline" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.base" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.base.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.comm.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.comm.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.comm" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.comm.codec.bytebuffer" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.comm.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.comm.net" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.comm.codec" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.comm.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.comm.ipc" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.comm.ipc" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.comm.vac.bridge" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.comm.vac.bridge" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.comm.vac.server" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.comm.vac.server" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.comm.vac.server" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.command.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.command.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.motion.execution" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.complexCommand.execution" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.motion.mapping" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.command.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.command.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.config" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.config" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.config" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.config" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.config.postgres" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.config.postgres" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.config.postgres" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.config.postgres" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.data" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.data" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.data" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.data.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.data.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.data.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.data.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.data.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.data.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.data.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.data.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.data.sync" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.data.sync" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.data.sync" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.data.sync" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.database.utilities" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.database.utilities" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.database.utilities" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.database.exception" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.database.upgrade" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.database.restore" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.database.metainf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.database.backup" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.database.utilities" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.diagnostics" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.diagnostics" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.robot" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.filter" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.exception" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.action" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.diagnostics" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.diagnostics.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.diagnostics.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.diagnostics.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.lang" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.diagnostics.navbox" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.diagnostics.navbox" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.diagnostics.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.diagnostics.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.diagnostics.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.diagnostics.sunrise" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.diagnostics.sunrise" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.diagnostics.vms" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.diagnostics.vms" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.diagnostics.vms.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.diagnostics.vms" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.encryption.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.encryption.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/org.bouncycastle.jce.spec" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.encryption.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.jce" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto.macs" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.jce.interfaces" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.math.ec" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.encryption.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto.generators" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto.modes" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.jce.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto.digests" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto.params" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.asn1.x509" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.bouncycastle.crypto.engines" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fineloc" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fineloc" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fineloc.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fineloc" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fineloc.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fineloc.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fineloc.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fineloc" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fineloc.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fineloc.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fineloc.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fineloc.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fleet.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fleet.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.actions" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.graph" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.graph.properties" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.graph.properties.lang" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.filter" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.coupledPlanner" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fleet.coupledPlanner" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.oda" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fleet.coupledPlanner" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.manager" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fleet.manager" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.planner.util" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.planner" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.dispatcher" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.util" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.internal.serializer" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.depgraph" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.planner.mission" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.state" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.colli" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.executor.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fleet.manager" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.service" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fleet.service" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.service" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fleet.service" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.shortestPathDispatcher" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.fleet.shortestPathDispatcher" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fleet.spd" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.fleet.shortestPathDispatcher" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.simulation" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.fleet.simulation" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.fleet.simulation.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.fleet.simulation.api" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.free" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.free" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.free.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.free" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.free.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.free.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.free.lang" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.free.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.free" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.free.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.free.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.free.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.free.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.graph" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.graph" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.graph.traverse" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph.impl" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph.event" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph.util" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph.generate" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.graph" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph.alg" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.graph.cost" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.kmp.omnimove" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.kmp.omnimove" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove.acknowledge" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.kmp.omnimove.acknowledge" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove.acknowledge" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove.acknowledge.interceptor" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove.acknowledge.interceptor" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.kmp.omnimove.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.kmp.omnimove.acknowledge" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove.basedriver" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove.basedriver" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove.honk" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.kmp.omnimove.honk" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove.honk" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove.honk.interceptor" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove.honk.interceptor" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove1500.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove1500.api" selectedVersion="NONE" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.kmp.omnimove1500" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove1500.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove1500.lift.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove1500.lift.api" selectedVersion="NONE" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.kmp.omnimove1500.lift" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove1500.lift.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove1500.lift.interceptor" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove1500.lift.interceptor" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove1500.lift.provider" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove1500.lift.provider" selectedVersion="NONE" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove1500.lift.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove1500.provider" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.kmp.omnimove1500.provider" selectedVersion="NONE" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.kmp.omnimove1500.service" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove1500.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove200.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.kmp.omnimove200.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove200.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.kmp.omnimove200" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.kmp.omnimove200.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.kmp.omnimove200.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.kmp.omnimove200.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.lift" installItem="true" installedVersion="1.0.0.buildV110_10" itemPath="com.kuka/com.kuka.nav.lift" selectedVersion="1.0.0.buildV110_10" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.lift.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.lift" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.lift.api" installItem="true" installedVersion="1.0.0.buildV110_10" itemPath="com.kuka/com.kuka.nav.lift.api" selectedVersion="1.0.0.buildV110_10" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.lift.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.lift" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.maintenance" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.maintenance" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.maintenance" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.executor" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.maintenance.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.maintenance.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.action" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.maintenance.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.maintenance.backup" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.maintenance.backup" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.maintenance.backup" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.maintenance.backup.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.maintenance.backup.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.maintenance.backup.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.backup" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.maintenance.backup.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.maintenance.backup.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.backup.ncf.instant" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.maintenance.backup.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.backup.ncf.scheduler" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.backup.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.backup.ncf.exception" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.maintenance.backup.service" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.maintenance.backup.service" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.maintenance.backup.service" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.maintenance.backup.service.provider.scheduler" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.mapencryption.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.mapencryption.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.mapencryption.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.mapencryption.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.mapping" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.mapping" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.mapping" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.mapping" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.mapping.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.mapping.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.mapping.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.mapping.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.mapzone" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.mapzone" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.mapzone" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.mapzone" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.multicast" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.multicast" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.multicast" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.multicast" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.handling" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.handling" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.handling.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.handling" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.handling.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.handling.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.handling" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.handling.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.filter" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.manager" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.manager" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.manager" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.manager.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.manager.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.manager.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.manager" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.manager.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.manager.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.manager.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.manager.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.manager.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.parser" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.parser" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/org.kabeja" version="0.5.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.parser" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.parser" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/org.kabeja.parser" version="0.5.0"/>
+                <Interface id="com.kuka/OSGi/org.kabeja.dxf" version="0.5.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.template.manager" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.template.manager" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.template.manager" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.template.manager.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.object.template.manager.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.object.template.manager.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.object.template.manager.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.object.template.manager.swb" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.nav.object.template.manager.swb" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.projectSync" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.projectSync" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.projectSync" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.projectSync.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.projectSync.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.project.sync.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.projectSync.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.vividsolutions.jts.awt" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider.console" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider.serialization" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.commext" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.vividsolutions.jts.geom.impl" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider.robotcomm" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.vividsolutions.jts.geom" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider.geometry" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.vividsolutions.jts.algorithm" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider.resourcePool" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.provider.util" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.request.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.request.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.request.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.request.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.robot" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.robot" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.robot" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.ncf.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.locking.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.robot.fdi.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.robot.fdi.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fdi.data" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.fdi" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.robot.fdi.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.robot.manager.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.robot.manager.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.manager.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.robot.manager.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.comm.vac.protocol" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.manager.comm" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.robot.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.robot.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.ncf.fineloc" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robot.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.robot.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.robotCommander" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.robotCommander" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.robotCommander" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.robotCommander" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.services.installation" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.services.installation" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.installation.service" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.services.installation" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.spatialObject.provider" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.spatialObject.provider" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.spatialObject.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.spatialObject.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.special.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.special.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.special.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.special.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.special.service" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.special.service" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.special.service" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.systemfailure" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.systemfailure" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.systemfailure" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.systemfailure.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.systemfailure.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.systemfailure" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.systemfailure.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.systemfailureevent.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.systemfailureevent.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.systemfailureevent" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.systemfailureevent.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.systemfailureevent.handler" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.systemfailureevent.handler" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.systemfailureevent.handler.database" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.systemfailureevent.handler" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.systemfailureevent.handler" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.systemfailureevent.handler.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.systemfailureevent.handler.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.systemfailureevent.handler.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.systemfailureevent.handler.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.task.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.task.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.task.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.task.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.task.remote" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.task.remote" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.task.remote" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.task.remote.futureuse" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.task.remote.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.task.remote.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.task.remote.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.task.remote" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.task.service" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.task.service" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.task.service" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.virtualLine" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.virtualLine" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.virtualLine" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.virtualLine.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.virtualLine.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.virtualLine.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.line" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.line.lang" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.virtualLine.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.virtualLine.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.line.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.virtualLine.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.virtualPath" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.virtualPath" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.path.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.virtualPath" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.virtualPath.api" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.virtualPath.api" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.nav.path" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.path.lang" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.nav.virtualPath.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.nav.virtualPath.ncf" installItem="true" installedVersion="1.0.0.buildV110_8" itemPath="com.kuka/com.kuka.nav.virtualPath.ncf" selectedVersion="1.0.0.buildV110_8" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.nav.virtualPath.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.nav.path.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.objectprovider" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.objectprovider" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.objectprovider.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.objectprovider.api" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.processData.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.processData.api" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.processData.impl" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.processData.impl" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.project" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.project" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.project" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.project" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.project.fragment" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.project.fragment" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.project.fragment" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.project.manager" installItem="true" installedVersion="1.1.0.13" itemPath="com.kuka/com.kuka.project.manager" selectedVersion="1.1.0.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.project.manager" version="1.1.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.project.provider" version="1.1.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.projectService" installItem="true" installedVersion="1.0.1.15" itemPath="com.kuka/com.kuka.projectService" selectedVersion="1.0.1.15" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.projectService" version="1.0.1"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.projectService.ncf" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.projectService.ncf" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.projectService.common" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.projectService.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.projectService" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.publishing.api" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.publishing.api" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.server" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.client" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.publishing.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.publishing.host" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.publishing.host" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.publishing.host" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.publishing.ncf" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.publishing.ncf" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.ncf.serialization" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.publishing.ncf" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.ncf.serialization.json" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.ncf.client" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.ncf.serviceDirectory" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.ncf.server" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.ncf" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.publishing.provider" installItem="true" installedVersion="1.0.0.13" itemPath="com.kuka/com.kuka.publishing.provider" selectedVersion="1.0.0.13" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.publishing.provider" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.publishing.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.resource.api" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.resource.api" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.resource.locking" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.resource" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.resource.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.resource.manager" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.resource.manager" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.resource.manager" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.resource.provider.api" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.resource.provider.api" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.resource.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.osgi" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.resource.provider.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.resource.locking.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.resource.osgi" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI" installItem="true" installedVersion="1.15.2.15" itemPath="com.kuka/com.kuka.roboticsAPI" selectedVersion="1.15.2.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.conditionModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.recovery" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.brakeTest" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.uiModel.userKeys" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.applicationModel.tasks" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.commandModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.samples" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.sensorModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.geometricModel.math" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.deviceModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.persistenceModel.templateModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.l3Exception" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.params" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.requestModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.geometricModel.redundancy" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.persistenceModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.predefinedCompounds" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.mapping" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.deviceModel.level3Exceptions" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel.stopConditions" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.persistenceModel.measurementModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.geometricModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.executionModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.mapping" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.geometricModel.physics" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.xml" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.api" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.conditions" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.requests" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.applicationModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.commandModel.l3Exception" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel.controlModeModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.api.expressions" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.persistenceModel.processDataModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel.velocityControlled" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.concurrencyModel" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.ioModel" version="1.15.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.roboticsAPI" version="1.15.2"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.positionMastering" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.connectionLib" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.uiModel" version="1.15.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI.feeder.frames" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.roboticsAPI.feeder.frames" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI.feeder.templates" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.roboticsAPI.feeder.templates" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI.handGuiding" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.roboticsAPI.handGuiding" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI.kmpOmniMove" installItem="true" installedVersion="1.15.0.buildSEM_R15_7" itemPath="com.kuka/com.kuka.roboticsAPI.kmpOmniMove" selectedVersion="1.15.0.buildSEM_R15_7" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel.kmp" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.mapping.kmp" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.deviceModel.kmp" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.state.kmp.provider" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.annotations" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.capabilities.interfaces" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.predefinedCompounds.kmp" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.capabilities.driveBrakeTest" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.state.kmp" version="1.15.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.roboticsAPI.kmpOmniMove" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.capabilities.ledStrip" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.capabilities.ledStrip.effects" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.capabilities.floorMountedCharge" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.capabilities.honk" version="1.15.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI.liftingDevice" installItem="true" installedVersion="1.15.0.buildSEM_R15_7" itemPath="com.kuka/com.kuka.roboticsAPI.liftingDevice" selectedVersion="1.15.0.buildSEM_R15_7" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.deviceModel.kmp.liftingDevice" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.predefinedCompounds.kmp.liftingDevice" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.controllerModel.sunrise.mapping.kmp.liftingDevice" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.motionModel.kmp.liftingDevice" version="1.15.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.roboticsAPI.liftingDevice" version="1.15.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.roboticsAPI.deviceModel.kmp.capabilities.liftingDevice" version="1.15.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.roboticsAPI.task" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.roboticsAPI.task" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.safety.common" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.safety.common" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.safety.configuration" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.safety.configuration" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.safety.configuration.actions" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.safety.configuration.actions" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.safety.configuration.model" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.safety.configuration.model" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.safety.configuratorLib" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.safety.configuratorLib" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.capabilityRegistrator.LedStripCapabilityRegistrator" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.capabilityRegistrator.LedStripCapabilityRegistrator" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.controlPanel" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.controlPanel" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.diagnosticService" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.diagnosticService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.diagnosticService.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.diagnosticService.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.handGuiding.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.handGuiding.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.kmpOmniMove" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.kmpOmniMove" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.kmpOmniMove.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.kmpOmniMove.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.ledStripService" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.ledStripService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.liftingDevice" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.liftingDevice" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.liftingDevice.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.liftingDevice.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.platformControlService" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.platformControlService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.remoteControlSupport" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.remoteControlSupport" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.stateService" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.stateService" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.service.stateService.ncf" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.service.stateService.ncf" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.smartPad.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.smartPad.api" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.smartPad.impl" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.smartPad.impl" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.stateService.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.stateService.api" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.statuscontroller" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.statuscontroller" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.statuscontroller.statusgroups" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.statuscontroller.statusgroups" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.statuscontroller.systemstatussource" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.statuscontroller.systemstatussource" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.sunrise.api" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.sunrise.api" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.sunrise.common" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.sunrise.common" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/Bundle/com.kuka.sunrise.common" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.sunrise.common" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.sunrise.common.task.categories" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.sunrise.common.provider" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.sunrise.common.provider" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.sunrise.common.task.behaviors" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.project.sunrise" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.sunrise.common.provider" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.sunrise.controller" installItem="true" installedVersion="NONE" itemPath="com.kuka/com.kuka.sunrise.controller" selectedVersion="NONE" usage="Library"/>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.task.api" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.task.api" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.task" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.task.properties" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.task.api" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.task.manager" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.task.manager" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.task.manager" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.task.manager" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.task.logging" version="1.0.0"/>
+            </SoftwareItem>
+            <SoftwareItem autoSelected="true" canChangeSelection="true" displayName="com.kuka.task.provider.api" installItem="true" installedVersion="1.0.0.15" itemPath="com.kuka/com.kuka.task.provider.api" selectedVersion="1.0.0.15" usage="Library">
+                <Interface id="com.kuka/OSGi/com.kuka.task.provider" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.task.provider.event" version="1.0.0"/>
+                <Interface id="com.kuka/Bundle/com.kuka.task.provider.api" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.task.provider.behaviors" version="1.0.0"/>
+                <Interface id="com.kuka/OSGi/com.kuka.task.provider.pause" version="1.0.0"/>
+            </SoftwareItem>
+            <Property displayName="userName" key="userName" type="String">
+                <Value>NavServer</Value>
+            </Property>
+            <Property displayName="ROBOT_BIN_DIR" key="ROBOT_BIN_DIR" optional="true" type="String">
+                <Value>C:\NAV\NavServer\Bin</Value>
+            </Property>
+            <Property displayName="IP" key="IP" showInEditor="true" type="String">
+                <Value>172.31.1.102</Value>
+            </Property>
+        </TopologyItem>
+        <Property displayName="userName" key="userName" type="String">
+            <Value>Project</Value>
+        </Property>
+    </TopologyItem>
+</ConfigurationProject>

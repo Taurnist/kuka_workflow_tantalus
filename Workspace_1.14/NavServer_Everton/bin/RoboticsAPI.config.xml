@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RoboticsAPI>
+	<Engine Class="com.kuka.roboticsAPI.persistenceModel.PersistenceEngine"/>
+	<DataSource Class="com.kuka.roboticsAPI.persistenceModel.XmlApplicationDataSource" DataFile="RoboticsAPI.data.xml" Name="robotApplicationDataSource"/>
+</RoboticsAPI>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RequiredInterfaces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Interface name="com.kuka/EtherCATConfig/SYS_X48" version="1.0" source="WorkVisual" />
+  <Interface name="com.kuka/EtherCATWrapper/EtherCATWrapperBase" version="8.4" source="WorkVisual" />
+  <Interface name="com.kuka/ProfinetDriver/ProfinetDriver" version="4.1" source="WorkVisual" />
+</RequiredInterfaces>

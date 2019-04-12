@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This material is the exclusive property of KUKA Roboter GmbH.
+Except as expressly permitted by separate agreement, this material may only
+be used by members of the development department of KUKA Roboter GmbH
+for internal development purposes of KUKA Roboter GmbH.
+
+Copyright (C) 2015
+KUKA Roboter GmbH, Germany. All Rights Reserved
+
+<CL>
+*****************************************************************************
+ Datum       Programmer          Reviewer
+             Description
+*****************************************************************************
+ 18.08.2015  Bertossi            Fürst, ID 3138*
+             Creation
+*****************************************************************************
+</CL>
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+   <xs:complexType name="PerformancePoint">
+      <xs:attribute name="Controller" type="xs:string" use="required"/>
+      <xs:attribute name="Value" use="required">
+         <xs:simpleType>
+            <xs:restriction base="xs:double">
+               <xs:minInclusive value="0.0"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="AxisDependent">
+      <xs:attribute name="Scaling" type="xs:double" use="required"/>
+      <xs:attribute name="ReferenceAxesNumber" type="xs:int" use="required"/>
+   </xs:complexType>
+   <xs:complexType name="CalculationUnit">
+      <xs:sequence>
+         <xs:element name="AxisDependent" type="AxisDependent" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="Points" type="PerformancePoint" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+   </xs:complexType>
+   <xs:complexType name="CalculationUnits">
+      <xs:sequence>
+         <xs:element name="Unit" type="CalculationUnit" maxOccurs="unbounded">
+            <xs:unique name="UniquePointsName">
+               <xs:selector xpath="./Points"/>
+               <xs:field xpath="@Controller"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="Units" type="CalculationUnits">
+      <xs:unique name="UniqueUnitName">
+         <xs:selector xpath="./Unit"/>
+         <xs:field xpath="@Name"/>
+      </xs:unique>
+   </xs:element>
+</xs:schema>

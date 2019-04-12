@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This material is the exclusive property of KUKA Roboter GmbH.
+Except as expressly permitted by separate agreement, this material may only
+be used by members of the development department of KUKA Roboter GmbH
+for internal development purposes of KUKA Roboter GmbH.
+
+Copyright (C) 2015
+KUKA Roboter GmbH, Germany. All Rights Reserved
+
+<CL>
+*****************************************************************************
+ Datum       Programmer          Reviewer
+             Description
+*****************************************************************************
+ 27.08.2015  Ueberle             Fuerst, ID 3137*
+             Creation
+*****************************************************************************
+</CL>
+-->
+<xs:schema id="SamMonitoredDataDependency" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+   <xs:complexType name="CalcUnitType">
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+   </xs:complexType>
+
+   <xs:complexType name="BaseLoadType">
+      <xs:sequence>
+         <xs:element name="CalcUnit" type="CalcUnitType">
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="MonDataType">
+      <xs:sequence>
+         <xs:element name="CalcUnit" type="CalcUnitType" minOccurs="1" maxOccurs="unbounded">
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+   </xs:complexType>
+   
+   <xs:complexType name="MadaTypeType">
+      <xs:sequence>
+        <xs:element name="BaseLoad" type="BaseLoadType" minOccurs="1" maxOccurs="1">
+        </xs:element>
+        <xs:element name="MonData" type="MonDataType" minOccurs="0" maxOccurs="unbounded">
+            <xs:unique name="UniqueCalcUnitName">
+               <xs:selector xpath="./CalcUnit"/>
+               <xs:field xpath="@Name"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="KinType" type="xs:string" use="required"/>
+      <xs:attribute name="hasSafePos" type="xs:boolean" use="required"/>
+      <xs:attribute name="hasSafeTor" type="xs:boolean" use="required"/>      
+   </xs:complexType>
+   
+   <xs:complexType name="MadaTypesType">
+      <xs:sequence>
+         <xs:element name="MadaType" type="MadaTypeType" minOccurs="1" maxOccurs="unbounded">
+            <xs:unique name="UniqueMonDataType">
+               <xs:selector xpath="./MonData"/>
+               <xs:field xpath="@Name"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:element name="MonitoredDataDependency" type="MadaTypesType">
+      <xs:unique name="UniqueMadaType">
+         <xs:selector xpath="./MadaType"/>
+         <xs:field xpath="@KinType"/>
+         <xs:field xpath="@hasSafePos"/>
+         <xs:field xpath="@hasSafeTor"/>
+      </xs:unique>
+   </xs:element>
+
+</xs:schema>

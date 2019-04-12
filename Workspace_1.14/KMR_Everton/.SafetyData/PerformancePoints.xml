@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This material is the exclusive property of KUKA Roboter GmbH.
+Except as expressly permitted by separate agreement, this material may only
+be used by members of the development department of KUKA Roboter GmbH
+for internal development purposes of KUKA Roboter GmbH.
+
+Copyright (C) 2015-2016
+KUKA Roboter GmbH, Germany. All Rights Reserved
+
+<CL>
+*****************************************************************************
+ Datum       Programmer          Reviewer
+             Description
+*****************************************************************************
+ 18.08.2015  Bertossi            Fürst, ID 3138*
+             Creation
+ 14.10.2015  Bertossi            not needed
+             Added missing AMF type axis velocity
+ 16.02.2016  Milighetti          Lipp, ID 3335
+             Added controller differentiation
+ 02.03.2016  Milighetti          not needed
+             Fix for bug 163908
+ 14.03.2016  Magnanimo           Lê, ID 3369
+             Fix for bug 165761
+*****************************************************************************
+</CL>
+-->
+<Units  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+   xs:noNamespaceSchemaLocation="PerformancePoints.xsd">
+   <!-- By definition the maximal number of performance points per controller: 1000
+        Granted computing time of the safety application module:
+         - Controller ControllerLBR5: 2000 micros GNU/ 4.1 ms DIAB
+         - Controller ControllerKRC4Compact: 750 micros GNU
+         - Controller ControllerLBR4: 750 micros GNU
+        The performance points of the units has been determined with respect to the granted computing time.
+        The numbers have been rounded.
+   -->
+   <Unit Name="BASE_LOAD_SAM">
+      <Points Controller="Default" Value="0.0"/>
+      <Points Controller="ControllerLBR5" Value="205.0"/>
+      <Points Controller="ControllerKRC4Compact" Value="400.0"/>
+      <Points Controller="ControllerLBR4" Value="590.7"/>
+   </Unit>
+   <Unit Name="BASE_LOAD_LBR5">
+      <Points Controller="ControllerLBR5" Value="406.0"/>
+   </Unit>
+   <Unit Name="BASE_LOAD_AGILUS">
+      <Points Controller="ControllerKRC4Compact" Value="400.0"/>
+   </Unit>
+   <Unit Name="BASE_LOAD_KMP">
+      <Points Controller="ControllerLBR5" Value="33.0"/>
+   </Unit>
+   <Unit Name="BASE_LOAD_LBR4">
+      <Points Controller="ControllerLBR4" Value="93.3"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_ALWAYS_VIOLATED">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_EMERGENCY_STOP_LOCAL">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_CONTROL_PANEL_ENABLE">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_CONTROL_PANEL_PANIC">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_OP_MODE_TEST">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_OP_MODE_AUT_OR_EXT">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_OP_MODE_T1_OR_KRF">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_OP_MODE_HIGH_SPEED">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_INPUT_SIGNAL">
+      <Points Controller="ControllerLBR5" Value="0.1"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.2"/>
+      <Points Controller="ControllerLBR4" Value="0.2"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_STANDSTILL_ALL_AXES">
+      <Points Controller="ControllerLBR5" Value="0.4"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.8"/>
+      <Points Controller="ControllerLBR4" Value="0.8"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_MOTION_ENABLE">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_AXIS_TORQUE">
+      <Points Controller="ControllerLBR5" Value="0.1"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.0"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_AXIS_VELOCITY">
+      <Points Controller="ControllerLBR5" Value="0.1"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.2"/>
+      <Points Controller="ControllerLBR4" Value="0.2"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_POS_REFERENCE">
+      <Points Controller="ControllerLBR5" Value="0.5"/>
+      <Points Controller="ControllerKRC4Compact" Value="1.0"/>
+      <Points Controller="ControllerLBR4" Value="0.7"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_TORQUE_REFERENCE">
+      <Points Controller="ControllerLBR5" Value="0.5"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.0"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_AXIS_RANGE">
+      <Points Controller="ControllerLBR5" Value="0.1"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.3"/>
+      <Points Controller="ControllerLBR4" Value="0.3"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_CARTESIAN_TRANSLATIONAL_VELOCITY">
+      <Points Controller="ControllerLBR5" Value="0.3"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.7"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_CART_WORKSPACE">
+      <Points Controller="ControllerLBR5" Value="20.7"/>
+      <Points Controller="ControllerKRC4Compact" Value="52.8"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_CART_PROTECTED_SPACE">
+      <Points Controller="ControllerLBR5" Value="20.2"/>
+      <Points Controller="ControllerKRC4Compact" Value="51.4"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_COLLISION_DETECTION">
+      <Points Controller="ControllerLBR5" Value="0.2"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.0"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_TCP_FORCE">
+      <Points Controller="ControllerLBR5" Value="0.1"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.0"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_HAND_GUIDING_ENABLE">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_HAND_GUIDING_ENABLE_ACTIVE">
+      <Points Controller="Default" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_DELAY">
+      <Points Controller="ControllerLBR5" Value="0.2"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.3"/>
+      <Points Controller="ControllerLBR4" Value="0.3"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_TOOL_ORIENTATION">
+      <Points Controller="ControllerLBR5" Value="0.3"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.7"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_TOOL_RELATED_VELOCITY_COMPONENT">
+      <Points Controller="ControllerLBR5" Value="0.1"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.2"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+   <Unit Name="E_AMF_TYPE_BASE_RELATED_TCP_FORCE_COMPONENT">
+      <Points Controller="ControllerLBR5" Value="2.7"/>
+      <Points Controller="ControllerKRC4Compact" Value="0.0"/>
+      <Points Controller="ControllerLBR4" Value="0.0"/>
+   </Unit>
+</Units>

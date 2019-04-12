@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="FestoController" IconName="FestoController" SignalTypes="InOut" TemplateName="FestoController">
+    <IOs>
+      <DigitalIOItem Name="Out_1_0_DriveEnable" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>= 1: Antrieb freigeben
+= 0: Antrieb gesperrt</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_1_1_Stop" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>= 1: Betrieb freigeben
+= 0: Stop 1 aktiv</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_1_3_ResetFault" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit steigender Flanke wird anliegende Störung quittiert und Störwert gelöscht</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_1_6_SelectOperatingMode" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit Out_1_7_SelectOperatingMode
+= 00: Satzselektion
+= 01: Direktauftrag
+= 10: reserviert
+= 11: reserviert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_2_0_Halt" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>= 1: Halt nicht aktiv
+= 0: Halt aktiviert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_2_1_Start" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Bei steigender Flanke wird Positionierung (Solldaten) gestartet (Satz 0 = Referenzfahrt)</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_2_2_StartHoming" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Bei steigender Flanke wird Referenzfahrt mit eingestellten Parametern gestartet</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_2_6_Clear" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Im Zustand "Halt" bewirkt steigende Flanke das Löschen des Auftrages und den Übergang in Zustand "Bereit".</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_0_Abs" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Sollwert ist absolut
+= 1: Sollwert ist relativ zum letzten Sollwert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_1_ControlMode" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit Out_3_2_ControlMode:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_2_ControlMode" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit Out_3_1_ControlMode:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_1_1_OperationEnabled" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Stopp aktiv
+= 1: Betrieb freigegeben, Positionieren möglich</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_1_2_Warning" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Warnung liegt nicht an
+= 1: Warnung liegt an</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_1_3_Fault" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Keine Störung
+= 1: Störung liegt an bzw. Störreaktion aktiv</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_2_0_Halt" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Halt aktiv
+= 1: Halt nicht aktive, Achse kann bewegt werden</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_2_1_AcknowledgeStart" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Bereit für Start (Positionieren, Referenzieren)
+= 1: Start ausgeführt (Positionieren, Referenzieren)</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_2_2_MotionComplete" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Fahrauftrag aktiv
+= 1: Fahrauftrag abgeschlossen, ggf. mit Fehler
+Hinweis: MC wird erstmals nach Einschalten gesetzt</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_2_3_AcknowledgeTeach" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Bereit für Teachen
+= 1: Teachen ausgeführt, Istwert wurde übernommen</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_2_4_AxisIsMoving" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Geschwindigkeit der Achse &lt; Grenzwert
+= 1: Geschwindigkeit der Achse &gt;= Grenzwert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_2_7_AxisIsReferenced" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Referenzierung muss durchgeführt werden
+= 1: Referenzinfo vorhanden, Referenzfahrt muss nicht durchgeführt werden</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_3_1_ControlModeFeedback" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit In_3_2_ControlModeFeedback:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_3_2_ControlModeFeedback" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit In_3_1_ControlModeFeedback:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_3_5_StrokeLimitReached" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Hubgrenzwert nicht erreicht
+= 1: Hubgrenzwert erreicht</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_1_0_DriveEnabled" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Antrieb gesperrt, Regler nicht aktiv
+= 1: Antrieb freigegeben</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_1_5_DriveControlByFCT_MMI" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: Gerätesteuerung durch Feldbus
+= 1: Gerätesteuerung durch FCT/MMI</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_1_6_DisplayOperatingMode" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit In_1_7_DisplayOperatingMode
+= 00: Satzselektion
+= 10: Direktauftrag
+= 10
+= 11</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_3_0_Absolute" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Positionsbetrieb
+= 0: Sollwert absolut
+= 1: Sollwert relativ</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_1_5_HMIAccessLock" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>= 0: MMI oder FCT dürfen Gerätesteuerung übernehmen
+= 1: MMI oder FCT dürfen Gerätesteuerung nicht übernehmen</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_1_7_SelectOperatingMode" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Mit Out_1_6_SelectOperatingMode:
+= 00: Satzselektion
+= 01: Direktauftrag</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_5_StrokeLimitNotActive" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_Force_0" DataType="SINT" IOType="Output" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_4_Force" DataType="SINT" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_2_3_JogPos" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_2_7" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_3" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_6" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_3_7" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_Force_1" DataType="BYTE" IOType="Output" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_Force_2" DataType="BYTE" IOType="Output" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Out_Force_3" DataType="BYTE" IOType="Output" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="In_CurrentPosition" DataType="DINT" IOType="Input" UsedBitWidth="32" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+    </IOs>
+    <Description />
+  </IOGroup>
+</SunriseIOGroupDescription>

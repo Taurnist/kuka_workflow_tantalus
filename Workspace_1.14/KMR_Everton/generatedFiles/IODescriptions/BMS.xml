@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="BMS" IconName="BMS" SignalTypes="InOut" TemplateName="BMS">
+    <IOs>
+      <DigitalIOItem Name="TotalCurrent" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Total current value encoded in 0.01A units</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StateOfCharge" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Estimated state of charge of the battery pack from 0 to 100 Percent.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MinCellTemperature" DataType="SINT" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Temperature of cell with the lowest temperature</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MaxCellTemperature" DataType="SINT" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Temperature of cell with the highest temperature</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_Overcurrent" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Current is above critical maximum</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="TotalVoltage" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Total voltage word of all cells added together, encoded in 0.01V</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_Undervoltage" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Some cell is below critical minimum voltage</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_Overvoltage" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Some cell is above critical maximum voltage</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_ComErrorModule" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>No Communication to one of the Modules</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_Overtemperature" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Cell temperature exceeds maximum critical temperature setting</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_FaultMinusContactor" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Error with minus Contactor</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_FaultPlusContactor" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Error with plus Contactor</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Protection_SensorBroken" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>A Current/Voltage sensor is defective.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_PreChargingFailure" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>No charging is possible.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_Overtemperature" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Maximum cell temperature exceeds warning temperature setting.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ReferenceCharge" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>1 = Reference Charge is neccessary</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Heartbeat" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Counts up from 0 to 255 every second.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_Undervoltage" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Voltage is below low voltage warning setting.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="AIR_Status" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>1 = both contactors (+/-) are active</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StateOfHealth" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_Overvoltage" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Voltage is over high voltage warning setting.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Status" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Status of the BMS/Battery. [0 = Error, 1 = Charge, 2 = Discharge]</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_Overcurrent" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Current is over high current warning setting.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="CountdownForShutdown" DataType="BYTE" IOType="Input" UsedBitWidth="4" IsConnected="true">
+        <Description>Timefrom 15sec to 0sec if a Protection Flag switches to 1</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="EmergencyShutdown" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = If the countdown for shutdown reaches zero after a Protection Flag</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ErrorModuleNumber" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Number of the Module within the Battery who has an error. [0 = no module faulty]</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ErrorCodeNumber" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Error number from the Module from 1 to 8. [Explanation within the Can Protocol]</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="NumberOfModules" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Identified Number of existing Modules.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MinCellVoltage" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Voltage of cell with the lowest voltage. [Offset = 1800mV / Factor = 0,1V]</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="MaxCellVoltage" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Voltage of cell with the highest voltage. [Offset = 1800mV / Factor = 10]</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_Version_YearMonth" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description>Date if the Software Version. [Month: Bit 0-3 / Year: Bit 4-7]</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_Version_Day" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_VersionHash_0" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_VersionHash_1" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_VersionHash_2" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_VersionHash_3" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_VersionHash_4" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SW_VersionHash_5" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="LoadCycles" DataType="UINT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Number of load cycles of this battery</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="OperatingHours" DataType="UINT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Sum of rounded operating hours</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ChargingEnable" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Charging is allowed. 0 = Charging is NOT allowed.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SerialNumberPart1" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SerialNumberPart2" DataType="WORD" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SerialNumberPart3" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="SerialNumberPart4" DataType="DWORD" IOType="Input" UsedBitWidth="32" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProductionDate1" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProductionDate2" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="IMD_ErrorCode" DataType="BYTE" IOType="Input" UsedBitWidth="4" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="IMD_Value" DataType="BYTE" IOType="Input" UsedBitWidth="8" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="IMD_Error" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="OperationModeBattery" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="ChargerState" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_LowVoltageTrigger1" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Warning_LowVoltageTrigger2" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="ChargingRelayEnable" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Switches the ChargingRelay to enable/disable of the vehicles bottom mounted charging contacts.</Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>This I/O group contains BMS data like StateOfCharge, Current, Voltage, Diagnostic</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

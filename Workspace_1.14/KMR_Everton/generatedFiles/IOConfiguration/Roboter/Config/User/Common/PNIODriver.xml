@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Driver xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" kukaVersion="1">
+  <Version Label="">
+    <Info Version="" />
+    <Schema Version="600" />
+  </Version>
+  <PROFINET PNIODeviceName="sunrise" DeviceID="1024" />
+  <DeviceInstance Name="PNIO-DEV" busTimeout="20000" busCycleTime="8" DiagnosticAlarmActive="false" EnableBusErrorBit="false" InvertBusErrorBit="false" BusErrorBitOffset="0" EnableMaintenanceRequestBit="false" InvertMaintenanceRequestBit="true" MaintenanceRequestBitOffset="0" EnableMaintenanceDemandBit="false" InvertMaintenanceDemandBit="true" MaintenanceDemandBitOffset="0" EnableDiagnosticAlarmBit="false" InvertDiagnosticAlarmBit="false" DiagnosticAlarmBitOffset="0" NestedAlarmActive="false" />
+</Driver>

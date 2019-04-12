@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IOManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version Label="">
+    <Info Version="IOManager V0.1.0" />
+    <Schema Version="1" />
+  </Version>
+  <WarnMultipleUsageOfInputs printWarning="false" />
+  <BusList>
+    <Bus BusDriverName="ECatIODriver" BusInstanceName="SYS-X44">
+      <IOList>
+        <DigitalIO Name="BMS.AIR_Status" Type="INPUT" Scope="USER_IO" StartBit="992" BitSize="8" Signed="false">
+          <Description>1 = both contactors (+/-) are active</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.ChargerState" Type="OUTPUT" Scope="USER_IO" StartBit="12592" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.ChargingEnable" Type="OUTPUT" Scope="USER_IO" StartBit="12584" BitSize="1" Signed="false">
+          <Description>1 = Charging is allowed. 0 = Charging is NOT allowed.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.ChargingRelayEnable" Type="OUTPUT" Scope="USER_IO" StartBit="12615" BitSize="1" Signed="false">
+          <Description>Switches the ChargingRelay to enable/disable of the vehicles bottom mounted charging contacts.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.CountdownForShutdown" Type="INPUT" Scope="USER_IO" StartBit="1016" BitSize="4" Signed="false">
+          <Description>Timefrom 15sec to 0sec if a Protection Flag switches to 1</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.EmergencyShutdown" Type="INPUT" Scope="USER_IO" StartBit="1023" BitSize="1" Signed="false">
+          <Description>1 = If the countdown for shutdown reaches zero after a Protection Flag</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.ErrorCodeNumber" Type="INPUT" Scope="USER_IO" StartBit="1040" BitSize="8" Signed="false">
+          <Description>Error number from the Module from 1 to 8. [Explanation within the Can Protocol]</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.ErrorModuleNumber" Type="INPUT" Scope="USER_IO" StartBit="1032" BitSize="8" Signed="false">
+          <Description>Number of the Module within the Battery who has an error. [0 = no module faulty]</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Heartbeat" Type="INPUT" Scope="USER_IO" StartBit="936" BitSize="8" Signed="false">
+          <Description>Counts up from 0 to 255 every second.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.IMD_Error" Type="INPUT" Scope="USER_IO" StartBit="1048" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.IMD_ErrorCode" Type="INPUT" Scope="USER_IO" StartBit="1052" BitSize="4" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.IMD_Value" Type="INPUT" Scope="USER_IO" StartBit="1120" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.LoadCycles" Type="INPUT" Scope="USER_IO" StartBit="1192" BitSize="16" Signed="false">
+          <Description>Number of load cycles of this battery</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.MaxCellTemperature" Type="INPUT" Scope="USER_IO" StartBit="1096" BitSize="8" Signed="true">
+          <Description>Temperature of cell with the highest temperature</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.MaxCellVoltage" Type="INPUT" Scope="USER_IO" StartBit="1080" BitSize="8" Signed="false">
+          <Description>Voltage of cell with the highest voltage. [Offset = 1800mV / Factor = 10]</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.MinCellTemperature" Type="INPUT" Scope="USER_IO" StartBit="1088" BitSize="8" Signed="true">
+          <Description>Temperature of cell with the lowest temperature</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.MinCellVoltage" Type="INPUT" Scope="USER_IO" StartBit="1072" BitSize="8" Signed="false">
+          <Description>Voltage of cell with the lowest voltage. [Offset = 1800mV / Factor = 0,1V]</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.NumberOfModules" Type="INPUT" Scope="USER_IO" StartBit="1064" BitSize="8" Signed="false">
+          <Description>Identified Number of existing Modules.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.OperatingHours" Type="INPUT" Scope="USER_IO" StartBit="1208" BitSize="16" Signed="false">
+          <Description>Sum of rounded operating hours</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.OperationModeBattery" Type="OUTPUT" Scope="USER_IO" StartBit="12576" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.ProductionDate1" Type="INPUT" Scope="USER_IO" StartBit="1320" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.ProductionDate2" Type="INPUT" Scope="USER_IO" StartBit="1328" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_ComErrorModule" Type="INPUT" Scope="USER_IO" StartBit="1005" BitSize="1" Signed="false">
+          <Description>No Communication to one of the Modules</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_FaultMinusContactor" Type="INPUT" Scope="USER_IO" StartBit="1009" BitSize="1" Signed="false">
+          <Description>Error with minus Contactor</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_FaultPlusContactor" Type="INPUT" Scope="USER_IO" StartBit="1008" BitSize="1" Signed="false">
+          <Description>Error with plus Contactor</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_Overcurrent" Type="INPUT" Scope="USER_IO" StartBit="1002" BitSize="1" Signed="false">
+          <Description>Current is above critical maximum</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_Overtemperature" Type="INPUT" Scope="USER_IO" StartBit="1003" BitSize="1" Signed="false">
+          <Description>Cell temperature exceeds maximum critical temperature setting</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_Overvoltage" Type="INPUT" Scope="USER_IO" StartBit="1001" BitSize="1" Signed="false">
+          <Description>Some cell is above critical maximum voltage</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_SensorBroken" Type="INPUT" Scope="USER_IO" StartBit="1007" BitSize="1" Signed="false">
+          <Description>A Current/Voltage sensor is defective.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Protection_Undervoltage" Type="INPUT" Scope="USER_IO" StartBit="1000" BitSize="1" Signed="false">
+          <Description>Some cell is below critical minimum voltage</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.ReferenceCharge" Type="INPUT" Scope="USER_IO" StartBit="984" BitSize="8" Signed="false">
+          <Description>1 = Reference Charge is neccessary</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.SerialNumberPart1" Type="INPUT" Scope="USER_IO" StartBit="1256" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SerialNumberPart2" Type="INPUT" Scope="USER_IO" StartBit="1264" BitSize="16" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SerialNumberPart3" Type="INPUT" Scope="USER_IO" StartBit="1280" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SerialNumberPart4" Type="INPUT" Scope="USER_IO" StartBit="1288" BitSize="32" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.StateOfCharge" Type="INPUT" Scope="USER_IO" StartBit="1104" BitSize="8" Signed="false">
+          <Description>Estimated state of charge of the battery pack from 0 to 100 Percent.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.StateOfHealth" Type="INPUT" Scope="USER_IO" StartBit="1112" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.Status" Type="INPUT" Scope="USER_IO" StartBit="944" BitSize="8" Signed="false">
+          <Description>Status of the BMS/Battery. [0 = Error, 1 = Charge, 2 = Discharge]</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_Version_Day" Type="INPUT" Scope="USER_IO" StartBit="1128" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_Version_YearMonth" Type="INPUT" Scope="USER_IO" StartBit="1136" BitSize="8" Signed="false">
+          <Description>Date if the Software Version. [Month: Bit 0-3 / Year: Bit 4-7]</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_VersionHash_0" Type="INPUT" Scope="USER_IO" StartBit="1144" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_VersionHash_1" Type="INPUT" Scope="USER_IO" StartBit="1152" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_VersionHash_2" Type="INPUT" Scope="USER_IO" StartBit="1160" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_VersionHash_3" Type="INPUT" Scope="USER_IO" StartBit="1168" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_VersionHash_4" Type="INPUT" Scope="USER_IO" StartBit="1176" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.SW_VersionHash_5" Type="INPUT" Scope="USER_IO" StartBit="1184" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.TotalCurrent" Type="INPUT" Scope="USER_IO" StartBit="952" BitSize="16" Signed="true">
+          <Description>Total current value encoded in 0.01A units</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.TotalVoltage" Type="INPUT" Scope="USER_IO" StartBit="968" BitSize="16" Signed="true">
+          <Description>Total voltage word of all cells added together, encoded in 0.01V</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_LowVoltageTrigger1" Type="INPUT" Scope="USER_IO" StartBit="1029" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_LowVoltageTrigger2" Type="INPUT" Scope="USER_IO" StartBit="1030" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_Overcurrent" Type="INPUT" Scope="USER_IO" StartBit="1026" BitSize="1" Signed="false">
+          <Description>Current is over high current warning setting.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_Overtemperature" Type="INPUT" Scope="USER_IO" StartBit="1027" BitSize="1" Signed="false">
+          <Description>Maximum cell temperature exceeds warning temperature setting.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_Overvoltage" Type="INPUT" Scope="USER_IO" StartBit="1025" BitSize="1" Signed="false">
+          <Description>Voltage is over high voltage warning setting.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_PreChargingFailure" Type="INPUT" Scope="USER_IO" StartBit="1028" BitSize="1" Signed="false">
+          <Description>No charging is possible.</Description>
+        </DigitalIO>
+        <DigitalIO Name="BMS.Warning_Undervoltage" Type="INPUT" Scope="USER_IO" StartBit="1024" BitSize="1" Signed="false">
+          <Description>Voltage is below low voltage warning setting.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.APP_BLUE" Type="OUTPUT" Scope="USER_IO" StartBit="12604" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.APP_GREEN" Type="OUTPUT" Scope="USER_IO" StartBit="12603" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.APP_RED" Type="OUTPUT" Scope="USER_IO" StartBit="12602" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.BATTERY_BLUE" Type="OUTPUT" Scope="USER_IO" StartBit="12613" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.BATTERY_GREEN" Type="OUTPUT" Scope="USER_IO" StartBit="12612" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.BATTERY_RED" Type="OUTPUT" Scope="USER_IO" StartBit="12611" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.DEVICE_BLUE" Type="OUTPUT" Scope="USER_IO" StartBit="12610" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.DEVICE_GREEN" Type="OUTPUT" Scope="USER_IO" StartBit="12609" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.DEVICE_RED" Type="OUTPUT" Scope="USER_IO" StartBit="12608" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.HONK" Type="OUTPUT" Scope="USER_IO" StartBit="12614" BitSize="1" Signed="false">
+          <Description>Activates the vehicle honk</Description>
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.SAFETY_BLUE" Type="OUTPUT" Scope="USER_IO" StartBit="12607" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.SAFETY_GREEN" Type="OUTPUT" Scope="USER_IO" StartBit="12606" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.SAFETY_RED" Type="OUTPUT" Scope="USER_IO" StartBit="12605" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.SOCKET_CONNECTED" Type="INPUT" Scope="USER_IO" StartBit="1453" BitSize="1" Signed="false">
+          <Description>True when the socket is connected.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.KEY_SWITCH_2" Type="INPUT" Scope="USER_IO" StartBit="1442" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.KEY_SWITCH_0" Type="INPUT" Scope="USER_IO" StartBit="1444" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.PLAY_BUTTON_LED" Type="OUTPUT" Scope="USER_IO" StartBit="12600" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.STOP_BUTTON_LED" Type="OUTPUT" Scope="USER_IO" StartBit="12601" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.PLAY_BUTTON" Type="INPUT" Scope="USER_IO" StartBit="1440" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ControlPanel.STOP_BUTTON" Type="INPUT" Scope="USER_IO" StartBit="1441" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.ActivateAcousticWarningSignal" Type="INPUT" Scope="USER_IO" StartBit="1691" BitSize="1" Signed="false">
+          <Description>Boolean signal to activate the vehicle integrated honk.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.Connected" Type="INPUT" Scope="USER_IO" StartBit="1526" BitSize="1" Signed="false">
+          <Description>True if the JAY Controller is connected.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.DeactivateProtectionField" Type="INPUT" Scope="USER_IO" StartBit="1689" BitSize="1" Signed="false">
+          <Description>Deactivates the protection field monitoring.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.Enable" Type="INPUT" Scope="USER_IO" StartBit="1680" BitSize="1" Signed="false">
+          <Description>True if controlling via JAY is enabled.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.Mode" Type="INPUT" Scope="USER_IO" StartBit="1681" BitSize="3" Signed="false">
+          <Description>Rotary switch for mode 1-3.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.Theta" Type="INPUT" Scope="USER_IO" StartBit="1776" BitSize="16" Signed="true">
+          <Description>Rotary joystick IO value.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.X" Type="INPUT" Scope="USER_IO" StartBit="1760" BitSize="16" Signed="true">
+          <Description>X joystick IO value.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.Y" Type="INPUT" Scope="USER_IO" StartBit="1744" BitSize="16" Signed="true">
+          <Description>Y joystick IO value.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.Z" Type="INPUT" Scope="USER_IO" StartBit="1792" BitSize="16" Signed="true">
+          <Description>Z joystick IO value.</Description>
+        </DigitalIO>
+      </IOList>
+    </Bus>
+    <Bus BusDriverName="PNIODriver" BusInstanceName="PNIO-DEV">
+      <IOList>
+        <DigitalIO Name="ControlPanel.KEY_SWITCH_1" Type="INPUT" Scope="USER_IO" StartBit="148" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.App_Enable" Type="INPUT" Scope="USER_IO" StartBit="145" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.App_Start" Type="INPUT" Scope="USER_IO" StartBit="144" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.AutExt_Active" Type="OUTPUT" Scope="USER_IO" StartBit="2320" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.AutExt_AppR2S" Type="OUTPUT" Scope="USER_IO" StartBit="2321" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.DefaultApp_Error" Type="OUTPUT" Scope="USER_IO" StartBit="2322" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.EnableNavigationControl" Type="OUTPUT" Scope="USER_IO" StartBit="2325" BitSize="1" Signed="false">
+          <Description>1 = Navigation can control the AGV in operating mode T1/T2/KRF</Description>
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.MotionEnable" Type="INPUT" Scope="USER_IO" StartBit="146" BitSize="1" Signed="false">
+          <Description>Is "true" when the Safety of the Vehicle is Ok.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.PlatformReleased" Type="OUTPUT" Scope="USER_IO" StartBit="2324" BitSize="1" Signed="false">
+          <Description>This state is "true" when the Vehicle is unlocked.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.Station_Error" Type="OUTPUT" Scope="USER_IO" StartBit="2323" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.ActiveScanField" Type="INPUT" Scope="USER_IO" StartBit="176" BitSize="16" Signed="true">
+          <Description>Information witch Scanfield number is already active from 0 to 15 (16 Cases).</Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.LastActiveScanField" Type="INPUT" Scope="USER_IO" StartBit="192" BitSize="16" Signed="true">
+          <Description>Number of the last active scanfield before protection field error. </Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.ProtectionField_S1" Type="INPUT" Scope="USER_IO" StartBit="160" BitSize="1" Signed="false">
+          <Description>1 = Protection Field from Scanner B1 is free</Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.ProtectionField_S2" Type="INPUT" Scope="USER_IO" StartBit="161" BitSize="1" Signed="false">
+          <Description>1 = Protection Field from Scanner B4 is free</Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.ProtectionFieldComplete" Type="INPUT" Scope="USER_IO" StartBit="166" BitSize="1" Signed="false">
+          <Description>1 = Protection Field from eyery Scanner is free </Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.ProtectionFieldMuted" Type="INPUT" Scope="USER_IO" StartBit="159" BitSize="1" Signed="false">
+          <Description>Information if the protection fields are active or not. State is "true" means they are inactive.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.WarningField_S1" Type="INPUT" Scope="USER_IO" StartBit="167" BitSize="1" Signed="false">
+          <Description>1 = Warning Field from Scanner B1 is free.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.WarningField_S2" Type="INPUT" Scope="USER_IO" StartBit="168" BitSize="1" Signed="false">
+          <Description>1 = Warning Field from Scanner B4 is free.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ScannerSignals.WarningFieldComplete" Type="INPUT" Scope="USER_IO" StartBit="173" BitSize="1" Signed="false">
+          <Description>1 = Warning Field from every Scanner is free.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.ApplicationStateUnknown" Type="OUTPUT" Scope="USER_IO" StartBit="2328" BitSize="1" Signed="false">
+          <Description>True (1) if the application state is unknown.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.ApplicationStateOK" Type="OUTPUT" Scope="USER_IO" StartBit="2329" BitSize="1" Signed="false">
+          <Description>True (1) if the application state is OK.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.ApplicationStateWarning" Type="OUTPUT" Scope="USER_IO" StartBit="2330" BitSize="1" Signed="false">
+          <Description>True (1) if the application state is warning.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.ApplicationStateError" Type="OUTPUT" Scope="USER_IO" StartBit="2331" BitSize="1" Signed="false">
+          <Description>True (1) if the application state is error.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.BatteryStateUnknown" Type="OUTPUT" Scope="USER_IO" StartBit="2332" BitSize="1" Signed="false">
+          <Description>True (1) if the battery state is unknown.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.BatteryStateOK" Type="OUTPUT" Scope="USER_IO" StartBit="2333" BitSize="1" Signed="false">
+          <Description>True (1) if the battery state is OK.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.BatteryStateWarning" Type="OUTPUT" Scope="USER_IO" StartBit="2334" BitSize="1" Signed="false">
+          <Description>True (1) if the battery state is warning.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.BatteryStateError" Type="OUTPUT" Scope="USER_IO" StartBit="2335" BitSize="1" Signed="false">
+          <Description>True (1) if the battery state is error.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.DeviceStateUnknown" Type="OUTPUT" Scope="USER_IO" StartBit="2336" BitSize="1" Signed="false">
+          <Description>True (1) if the device state is unknown.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.DeviceStateOK" Type="OUTPUT" Scope="USER_IO" StartBit="2337" BitSize="1" Signed="false">
+          <Description>True (1) if the device state is OK.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.DeviceStateWarning" Type="OUTPUT" Scope="USER_IO" StartBit="2338" BitSize="1" Signed="false">
+          <Description>True (1) if the device state is warning.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.DeviceStateError" Type="OUTPUT" Scope="USER_IO" StartBit="2339" BitSize="1" Signed="false">
+          <Description>True (1) if the device state is error.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.FieldBusStateUnknown" Type="OUTPUT" Scope="USER_IO" StartBit="2340" BitSize="1" Signed="false">
+          <Description>True (1) if the field bus state is unknown.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.FieldBusStateOK" Type="OUTPUT" Scope="USER_IO" StartBit="2341" BitSize="1" Signed="false">
+          <Description>True (1) if the field bus state is OK.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.FieldBusStateWarning" Type="OUTPUT" Scope="USER_IO" StartBit="2342" BitSize="1" Signed="false">
+          <Description>True (1) if the field bus state is warning.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.FieldBusStateError" Type="OUTPUT" Scope="USER_IO" StartBit="2343" BitSize="1" Signed="false">
+          <Description>True (1) if the field bus state is error.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.SafetyStateUnknown" Type="OUTPUT" Scope="USER_IO" StartBit="2344" BitSize="1" Signed="false">
+          <Description>True (1) if the safety state is unknown.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.SafetyStateOK" Type="OUTPUT" Scope="USER_IO" StartBit="2345" BitSize="1" Signed="false">
+          <Description>True (1) if the safety state is OK.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.SafetyStateWarning" Type="OUTPUT" Scope="USER_IO" StartBit="2346" BitSize="1" Signed="false">
+          <Description>True (1) if the safety state is warning.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.SafetyStateError" Type="OUTPUT" Scope="USER_IO" StartBit="2347" BitSize="1" Signed="false">
+          <Description>True (1) if the safety state is error.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.StationStateUnknown" Type="OUTPUT" Scope="USER_IO" StartBit="2348" BitSize="1" Signed="false">
+          <Description>True (1) if the station state is unknown.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.StationStateOK" Type="OUTPUT" Scope="USER_IO" StartBit="2349" BitSize="1" Signed="false">
+          <Description>True (1) if the station state is OK.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.StationStateWarning" Type="OUTPUT" Scope="USER_IO" StartBit="2350" BitSize="1" Signed="false">
+          <Description>True (1) if the station state is warning.</Description>
+        </DigitalIO>
+        <DigitalIO Name="MobilePlatformStateSignals.StationStateError" Type="OUTPUT" Scope="USER_IO" StartBit="2351" BitSize="1" Signed="false">
+          <Description>True (1) if the station state is error.</Description>
+        </DigitalIO>
+        <DigitalIO Name="RemoteControl.ProtectionFieldDeactivated" Type="OUTPUT" Scope="USER_IO" StartBit="2327" BitSize="1" Signed="false">
+          <Description>Forwarding of ProtectionField state to the Safe-PLC via ProfiNet.</Description>
+        </DigitalIO>
+        <DigitalIO Name="ExternalControl.ChargingRelayEnabled" Type="OUTPUT" Scope="USER_IO" StartBit="2326" BitSize="1" Signed="false">
+          <Description>Enables the charging relay.</Description>
+        </DigitalIO>
+      </IOList>
+    </Bus>
+    <Bus BusDriverName="ECatIODriver" BusInstanceName="SYS-X44_PB-Master1">
+      <IOList>
+        <DigitalIO Name="FestoController.In_CurrentPosition" Type="INPUT" Scope="USER_IO" StartBit="2256" BitSize="32" Signed="true">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_4_Force" Type="INPUT" Scope="USER_IO" StartBit="2248" BitSize="8" Signed="true">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_1_0_DriveEnabled" Type="INPUT" Scope="USER_IO" StartBit="2224" BitSize="1" Signed="false">
+          <Description>= 0: Antrieb gesperrt, Regler nicht aktiv
+= 1: Antrieb freigegeben</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_1_1_OperationEnabled" Type="INPUT" Scope="USER_IO" StartBit="2225" BitSize="1" Signed="false">
+          <Description>= 0: Stopp aktiv
+= 1: Betrieb freigegeben, Positionieren möglich</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_1_2_Warning" Type="INPUT" Scope="USER_IO" StartBit="2226" BitSize="1" Signed="false">
+          <Description>= 0: Warnung liegt nicht an
+= 1: Warnung liegt an</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_1_3_Fault" Type="INPUT" Scope="USER_IO" StartBit="2227" BitSize="1" Signed="false">
+          <Description>= 0: Keine Störung
+= 1: Störung liegt an bzw. Störreaktion aktiv</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_1_5_DriveControlByFCT_MMI" Type="INPUT" Scope="USER_IO" StartBit="2229" BitSize="1" Signed="false">
+          <Description>= 0: Gerätesteuerung durch Feldbus
+= 1: Gerätesteuerung durch FCT/MMI</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_1_6_DisplayOperatingMode" Type="INPUT" Scope="USER_IO" StartBit="2230" BitSize="1" Signed="false">
+          <Description>Mit In_1_7_DisplayOperatingMode
+= 00: Satzselektion
+= 10: Direktauftrag
+= 10
+= 11</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_2_0_Halt" Type="INPUT" Scope="USER_IO" StartBit="2232" BitSize="1" Signed="false">
+          <Description>= 0: Halt aktiv
+= 1: Halt nicht aktive, Achse kann bewegt werden</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_2_1_AcknowledgeStart" Type="INPUT" Scope="USER_IO" StartBit="2233" BitSize="1" Signed="false">
+          <Description>= 0: Bereit für Start (Positionieren, Referenzieren)
+= 1: Start ausgeführt (Positionieren, Referenzieren)</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_2_2_MotionComplete" Type="INPUT" Scope="USER_IO" StartBit="2234" BitSize="1" Signed="false">
+          <Description>= 0: Fahrauftrag aktiv
+= 1: Fahrauftrag abgeschlossen, ggf. mit Fehler
+Hinweis: MC wird erstmals nach Einschalten gesetzt</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_2_3_AcknowledgeTeach" Type="INPUT" Scope="USER_IO" StartBit="2235" BitSize="1" Signed="false">
+          <Description>= 0: Bereit für Teachen
+= 1: Teachen ausgeführt, Istwert wurde übernommen</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_2_4_AxisIsMoving" Type="INPUT" Scope="USER_IO" StartBit="2236" BitSize="1" Signed="false">
+          <Description>= 0: Geschwindigkeit der Achse &lt; Grenzwert
+= 1: Geschwindigkeit der Achse &gt;= Grenzwert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_2_7_AxisIsReferenced" Type="INPUT" Scope="USER_IO" StartBit="2239" BitSize="1" Signed="false">
+          <Description>= 0: Referenzierung muss durchgeführt werden
+= 1: Referenzinfo vorhanden, Referenzfahrt muss nicht durchgeführt werden</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_3_0_Absolute" Type="INPUT" Scope="USER_IO" StartBit="2240" BitSize="1" Signed="false">
+          <Description>Positionsbetrieb
+= 0: Sollwert absolut
+= 1: Sollwert relativ</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_3_1_ControlModeFeedback" Type="INPUT" Scope="USER_IO" StartBit="2241" BitSize="1" Signed="false">
+          <Description>Mit In_3_2_ControlModeFeedback:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_3_2_ControlModeFeedback" Type="INPUT" Scope="USER_IO" StartBit="2242" BitSize="1" Signed="false">
+          <Description>Mit In_3_1_ControlModeFeedback:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.In_3_5_StrokeLimitReached" Type="INPUT" Scope="USER_IO" StartBit="2245" BitSize="1" Signed="false">
+          <Description>= 0: Hubgrenzwert nicht erreicht
+= 1: Hubgrenzwert erreicht</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_Force_0" Type="OUTPUT" Scope="USER_IO" StartBit="13184" BitSize="8" Signed="true">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_Force_1" Type="OUTPUT" Scope="USER_IO" StartBit="13176" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_Force_2" Type="OUTPUT" Scope="USER_IO" StartBit="13168" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_Force_3" Type="OUTPUT" Scope="USER_IO" StartBit="13160" BitSize="8" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_1_0_DriveEnable" Type="OUTPUT" Scope="USER_IO" StartBit="13128" BitSize="1" Signed="false">
+          <Description>= 1: Antrieb freigeben
+= 0: Antrieb gesperrt</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_1_1_Stop" Type="OUTPUT" Scope="USER_IO" StartBit="13129" BitSize="1" Signed="false">
+          <Description>= 1: Betrieb freigeben
+= 0: Stop 1 aktiv</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_1_3_ResetFault" Type="OUTPUT" Scope="USER_IO" StartBit="13131" BitSize="1" Signed="false">
+          <Description>Mit steigender Flanke wird anliegende Störung quittiert und Störwert gelöscht</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_1_5_HMIAccessLock" Type="OUTPUT" Scope="USER_IO" StartBit="13133" BitSize="1" Signed="false">
+          <Description>= 0: MMI oder FCT dürfen Gerätesteuerung übernehmen
+= 1: MMI oder FCT dürfen Gerätesteuerung nicht übernehmen</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_1_6_SelectOperatingMode" Type="OUTPUT" Scope="USER_IO" StartBit="13134" BitSize="1" Signed="false">
+          <Description>Mit Out_1_7_SelectOperatingMode
+= 00: Satzselektion
+= 01: Direktauftrag
+= 10: reserviert
+= 11: reserviert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_1_7_SelectOperatingMode" Type="OUTPUT" Scope="USER_IO" StartBit="13135" BitSize="1" Signed="false">
+          <Description>Mit Out_1_6_SelectOperatingMode:
+= 00: Satzselektion
+= 01: Direktauftrag</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_2_0_Halt" Type="OUTPUT" Scope="USER_IO" StartBit="13136" BitSize="1" Signed="false">
+          <Description>= 1: Halt nicht aktiv
+= 0: Halt aktiviert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_2_1_Start" Type="OUTPUT" Scope="USER_IO" StartBit="13137" BitSize="1" Signed="false">
+          <Description>Bei steigender Flanke wird Positionierung (Solldaten) gestartet (Satz 0 = Referenzfahrt)</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_2_2_StartHoming" Type="OUTPUT" Scope="USER_IO" StartBit="13138" BitSize="1" Signed="false">
+          <Description>Bei steigender Flanke wird Referenzfahrt mit eingestellten Parametern gestartet</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_2_3_JogPos" Type="OUTPUT" Scope="USER_IO" StartBit="13139" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_2_6_Clear" Type="OUTPUT" Scope="USER_IO" StartBit="13142" BitSize="1" Signed="false">
+          <Description>Im Zustand "Halt" bewirkt steigende Flanke das Löschen des Auftrages und den Übergang in Zustand "Bereit".</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_2_7" Type="OUTPUT" Scope="USER_IO" StartBit="13143" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_0_Abs" Type="OUTPUT" Scope="USER_IO" StartBit="13144" BitSize="1" Signed="false">
+          <Description>= 0: Sollwert ist absolut
+= 1: Sollwert ist relativ zum letzten Sollwert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_1_ControlMode" Type="OUTPUT" Scope="USER_IO" StartBit="13145" BitSize="1" Signed="false">
+          <Description>Mit Out_3_2_ControlMode:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_2_ControlMode" Type="OUTPUT" Scope="USER_IO" StartBit="13146" BitSize="1" Signed="false">
+          <Description>Mit Out_3_1_ControlMode:
+= 00: Positionierbetrieb
+= 01: Kraftbetrieb
+= 10: reserviert
+= 11: reserviert</Description>
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_3" Type="OUTPUT" Scope="USER_IO" StartBit="13147" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_5_StrokeLimitNotActive" Type="OUTPUT" Scope="USER_IO" StartBit="13149" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_6" Type="OUTPUT" Scope="USER_IO" StartBit="13150" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="FestoController.Out_3_7" Type="OUTPUT" Scope="USER_IO" StartBit="13151" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+      </IOList>
+    </Bus>
+  </BusList>
+</IOManager>

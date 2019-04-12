@@ -1,0 +1,10 @@
+**/.history/*
+**history.index
+**/refactorings.history
+**/refactorings.index
+**/.git
+**/*.class
+*.log
+Workspace_1.14/.metadata/*
+Workspace_1.14/KMR_Everton/Workflow/*
+Workspace_1.14/NavServer_Everton/Workflow/*

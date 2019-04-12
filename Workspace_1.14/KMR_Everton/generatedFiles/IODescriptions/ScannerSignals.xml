@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="ScannerSignals" IconName="ScannerSignals" SignalTypes="InOut" TemplateName="ScannerSignals">
+    <IOs>
+      <DigitalIOItem Name="WarningField_S1" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Warning Field from Scanner B1 is free.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="WarningField_S2" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Warning Field from Scanner B4 is free.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="WarningFieldComplete" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Warning Field from every Scanner is free.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProtectionField_S1" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Protection Field from Scanner B1 is free</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProtectionField_S2" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Protection Field from Scanner B4 is free</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProtectionFieldComplete" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>1 = Protection Field from eyery Scanner is free </Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ActiveScanField" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Information witch Scanfield number is already active from 0 to 15 (16 Cases).</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProtectionFieldMuted" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Information if the protection fields are active or not. State is "true" means they are inactive.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="LastActiveScanField" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Number of the last active scanfield before protection field error. </Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>Contains necessary information from the laser scanners of the AGV</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

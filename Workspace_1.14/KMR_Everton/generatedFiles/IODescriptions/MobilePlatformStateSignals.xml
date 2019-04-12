@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="MobilePlatformStateSignals" IconName="MobilePlatformStateSignals" SignalTypes="InOut" TemplateName="MobilePlatformStateSignals">
+    <IOs>
+      <DigitalIOItem Name="BatteryStateOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the battery state is OK.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="BatteryStateUnknown" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the battery state is unknown.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ApplicationStateError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the application state is error.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ApplicationStateWarning" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the application state is warning.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ApplicationStateOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the application state is OK.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ApplicationStateUnknown" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the application state is unknown.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="BatteryStateWarning" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the battery state is warning.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="BatteryStateError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the battery state is error.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="DeviceStateUnknown" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the device state is unknown.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="DeviceStateOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the device state is OK.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="DeviceStateWarning" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the device state is warning.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="DeviceStateError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the device state is error.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="FieldBusStateUnknown" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the field bus state is unknown.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="FieldBusStateOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the field bus state is OK.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SafetyStateUnknown" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the safety state is unknown.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="FieldBusStateError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the field bus state is error.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="FieldBusStateWarning" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the field bus state is warning.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SafetyStateOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the safety state is OK.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SafetyStateWarning" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the safety state is warning.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="SafetyStateError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the safety state is error.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StationStateUnknown" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the station state is unknown.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StationStateOK" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the station state is OK.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StationStateWarning" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the station state is warning.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="StationStateError" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>True (1) if the station state is error.</Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>State signals of a mobile platform</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

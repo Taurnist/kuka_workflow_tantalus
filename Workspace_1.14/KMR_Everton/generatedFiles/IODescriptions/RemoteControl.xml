@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="RemoteControl" IconName="RemoteControl" SignalTypes="InOut" TemplateName="RemoteControl">
+    <IOs>
+      <DigitalIOItem Name="Connected" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>True if the JAY Controller is connected.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Enable" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>True if controlling via JAY is enabled.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Mode" DataType="USINT" IOType="Input" UsedBitWidth="3" IsConnected="true">
+        <Description>Rotary switch for mode 1-3.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="X" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>X joystick IO value.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Y" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Y joystick IO value.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Z" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Z joystick IO value.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="Theta" DataType="INT" IOType="Input" UsedBitWidth="16" IsConnected="true">
+        <Description>Rotary joystick IO value.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ActivateAcousticWarningSignal" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Boolean signal to activate the vehicle integrated honk.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="DeactivateProtectionField" DataType="BOOL" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description>Deactivates the protection field monitoring.</Description>
+      </DigitalIOItem>
+      <DigitalIOItem Name="ProtectionFieldDeactivated" DataType="BOOL" IOType="Output" UsedBitWidth="1" IsConnected="true">
+        <Description>Forwarding of ProtectionField state to the Safe-PLC via ProfiNet.</Description>
+      </DigitalIOItem>
+    </IOs>
+    <Description>IO Group for Remote Control via JAY</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>
