@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="vmsconnection">
+	<list key="connections">
+		<item value="172.31.1.102:8090"/>
+	</list>
+</section>

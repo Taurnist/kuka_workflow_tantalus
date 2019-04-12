@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="46" version="2.0">
+<workbenchAdvisor/>
+<window height="878" maximized="true" width="1608" x="-19" y="7">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="648"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="176" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="114" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="configurationModel.eclipsePlugin.ConfigurationEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1554393551013" focus="true" label="Workspace - Programming">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.xml" partName="RoboticsAPI.data.xml" path="C:/Users/uolfu/Documents/kuka_iiwa_photolysis/Workspace_1.14/KMR_Everton/src/RoboticsAPI.data.xml" title="RoboticsAPI.data.xml" tooltip="KMR_Everton/src/RoboticsAPI.data.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KMR_Everton/src/RoboticsAPI.data.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="338180" selectionTopPixel="56706"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.ProcessDataExample.xml" partName="RoboticsAPI.data.ProcessDataExample.xml" path="C:/Users/uolfu/Documents/kuka_iiwa_photolysis/Workspace_1.14/KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml" title="RoboticsAPI.data.ProcessDataExample.xml" tooltip="KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.config.xml" partName="RoboticsAPI.config.xml" path="C:/Users/uolfu/Documents/kuka_iiwa_photolysis/Workspace_1.14/KMR_Everton/src/RoboticsAPI.config.xml" title="RoboticsAPI.config.xml" tooltip="KMR_Everton/src/RoboticsAPI.config.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KMR_Everton/src/RoboticsAPI.config.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="KUKALaserView.LaserView" partName="LaserView 3D View">
+<viewState/>
+</view>
+<view id="KUKAMapView.MapView" partName="Mobile Robot MapView">
+<viewState/>
+</view>
+<view id="KUKAMapViewMaintenance" partName="KUKA MapView Maintenance">
+<viewState/>
+</view>
+<view id="KUKALaserView.commonLaserControlView" partName="LaserView Control">
+<viewState/>
+</view>
+<view id="com.kuka.roboticsAPI.navigation.applicationControl.eclipsePlugin.appControlView" partName="Task Control">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="com.kuka.nav.eclipsePlugin.FailureEventView" partName="Failure Event History">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" partName="Application data">
+<viewState/>
+</view>
+<view id="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" partName="Template data">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" activePerspective="com.kuka.common.eclipsePlugin.ProgrammingPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.kuka.common.eclipsePlugin.ProgrammingPerspectiveFactory" id="com.kuka.common.eclipsePlugin.ProgrammingPerspective" label="Programming"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<show_view_action id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="com.kuka.roboticsAPI.industrial.wizards.newProjectWizard"/>
+<new_wizard_action id="com.kuka.roboticsAPI.industrial.wizards.centralApplicationWizard"/>
+<new_wizard_action id="configurationModel.eclipsePlugin.CreateEmptyConfigurationWizard"/>
+<new_wizard_action id="com.kuka.roboticsAPI.io.eclipsePlugin.CreateNewIOConfigurationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<perspective_action id="com.kuka.common.eclipsePlugin.ProgrammingPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="shortcuts"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleBreakpoint"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.AllInstances"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.rename"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.delimiter.windows"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.inline"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.StepReturn"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.pull.up"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.clean.up"/>
+<hide_menu_item_id id="org.eclipse.egit.ui.commit.OpenCommitAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.Execute"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.delimiter.macOS9"/>
+<hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.ProfileHistoryMenuAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.generate.tostring"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ProfileLast"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.move.element"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.goToResource"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.gotoBreadcrumb"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.self.encapsulate.field"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.project"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.promote.local.variable"/>
+<hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.RunHistoryMenuAction"/>
+<hide_menu_item_id id="org.eclipse.ltk.ui.refactor.apply.refactoring.script"/>
+<hide_menu_item_id id="org.eclipse.ui.window.previousEditor"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.AllReferences"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.StepInto"/>
+<hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.DebugHistoryMenuAction"/>
+<hide_menu_item_id id="org.eclipse.ui.file.revert"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.move"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.use.supertype"/>
+<hide_menu_item_id id="org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction"/>
+<hide_menu_item_id id="org.eclipse.ui.window.previousPerspective"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.local.variable"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.actions.OpenJavaSearchPage"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals"/>
+<hide_menu_item_id id="org.eclipse.update.ui.updateMenu"/>
+<hide_menu_item_id id="breakpointTypes"/>
+<hide_menu_item_id id="org.eclipse.ui.window.showViewMenu"/>
+<hide_menu_item_id id="org.eclipse.ui.window.switchToEditor"/>
+<hide_menu_item_id id="org.eclipse.ui.help.tipsAndTricksAction"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.up"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.delimiter.unix"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.interface"/>
+<hide_menu_item_id id="org.eclipse.search.ui.performTextSearchWorkingSet"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.workspace"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactor.migrate.jar"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_menu_item_id id="readAccessSubMenu"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.surround.with.quickMenu"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.introduce.factory"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.Terminate"/>
+<hide_menu_item_id id="org.eclipse.ui.window.previousView"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.OpenRunConfigurations"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.toggle.comment"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.AddClassPrepareBreakpoint"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.SkipAllBreakpoints"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.create.getter.setter"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.OpenProfileConfigurations"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.hierarchy"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.externalize.strings"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.Watch"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.InstanceCount"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.goInto"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.add.javadoc.comment"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.open.hyperlink"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.references.in.working.set"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.rename.element"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.copy.qualified.name"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.working.set"/>
+<hide_menu_item_id id="org.eclipse.ui.update.findAndInstallUpdates"/>
+<hide_menu_item_id id="org.eclipse.ltk.ui.refactor.create.refactoring.script"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.superclass"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.sort.members"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.previous"/>
+<hide_menu_item_id id="org.eclipse.ltk.ui.refactor.show.refactoring.history"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.introduce.parameter"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.Suspend"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.Display"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.remove.block.comment"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleWatchpoint"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleMethodBreakpoint"/>
+<hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.RunWithConfigurationAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.infer.type.arguments"/>
+<hide_menu_item_id id="org.eclipse.ui.window.minimizePart"/>
+<hide_menu_item_id id="org.eclipse.ui.window.nextPerspective"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.OpenDebugConfigurations"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.override.methods"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.StepIntoSelection"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.push.down"/>
+<hide_menu_item_id id="org.eclipse.ui.window.newEditor"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.actions.BreakpointTypesContribution"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.shiftRight"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.StepOver"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.method"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.change.type"/>
+<hide_menu_item_id id="goTo"/>
+<hide_menu_item_id id="org.eclipse.ui.window.quickAccess"/>
+<hide_menu_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateMenu"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.introduce.parameter.object"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.working.set"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleLineBreakpoint"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.command.OpenFromClipboard"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.find.broken.nls.keys"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.create.delegate.methods"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.modify.method.parameters"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.project"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.move.inner.to.top.level"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.class"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.introduce.indirection"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.open.implementation"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.navigate.gotopackage"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleStepFilters"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.DebugLast"/>
+<hide_menu_item_id id="writeAccessSubMenu"/>
+<hide_menu_item_id id="org.eclipse.jdt.junit.gotoTest"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.workspace"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.back"/>
+<hide_menu_item_id id="org.eclipse.ui.window.showSystemMenu"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.add.import"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.quick.format"/>
+<hide_menu_item_id id="org.eclipse.ui.run"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.next"/>
+<hide_menu_item_id id="org.eclipse.ui.window.nextEditor"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.navigate.gototype"/>
+<hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.DebugWithConfigurationAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.hierarchy"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.convert.anonymous.to.nested"/>
+<hide_menu_item_id id="org.eclipse.ui.window.newWindow"/>
+<hide_menu_item_id id="org.eclipse.ui.window.activateEditor"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.Inspect"/>
+<hide_menu_item_id id="org.eclipse.ui.window.maximizePart"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.add.block.comment"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.constant"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.Resume"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.navigate.open.type"/>
+<hide_menu_item_id id="converstLineDelimitersTo"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.RunLast"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.implementors.in.working.set"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.add.unimplemented.constructors"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.ForceReturn"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.organize.imports"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.shiftLeft"/>
+<hide_menu_item_id id="org.eclipse.search.ui.openSearchDialog"/>
+<hide_menu_item_id id="org.eclipse.ui.update.manageConfiguration"/>
+<hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.ProfileWithConfigurationAction"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.RemoveAllBreakpoints"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.format"/>
+<hide_menu_item_id id="org.eclipse.ui.window.nextView"/>
+<hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.AddExceptionBreakpoint"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.working.set"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.forward"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.indent"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.launchActionSet"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+<hide_toolbar_item_id id="org.eclipse.ant.ui.toggleMarkOccurrences"/>
+<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
+<hide_toolbar_item_id id="org.eclipse.egit.ui.commit.OpenCommitAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.previous"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.edit.text.java.toggleMarkOccurrences"/>
+<hide_toolbar_item_id id="org.eclipse.egit.ui.team.OpenCommit"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.edit.text.java.toggleBreadcrumb"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.navigate.open.type"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleBlockSelectionMode"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<hide_toolbar_item_id id="org.eclipse.ant.ui.toggleAutoReconcile"/>
+<hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
+<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
+<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="com.kuka.roboticsAPI.eclipseBase.dataView.DataView"/>
+<view id="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d0c3d5" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e6da7b" ratio="0.78837085" ratioLeft="1505" ratioRight="404" relationship="2" relative="topLeft">
+<folder activePageID="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" appearance="2" expanded="2">
+<page content="com.kuka.roboticsAPI.eclipseBase.dataView.DataView" label="Application data"/>
+<page content="com.kuka.roboticsAPI.eclipseBase.templateView.TemplateView" label="Template data"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="756" ratioRight="252" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25992063" ratioLeft="262" ratioRight="746" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.65876776" ratioLeft="417" ratioRight="216" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.49921012" ratioLeft="316" ratioRight="317" relationship="4" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<descriptor class="com.kuka.nav.core.swb.plugin.PerspectiveFactory" id="KUKAMapView.perspective" label="KUKA Map Perspective"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="KUKAMapView.MapView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@ba9d8e" orientation="512" selectedTabId="com.kuka.roboticsAPI.navigation.applicationControl.eclipsePlugin.appControlView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="com.kuka.roboticsAPI.navigation.applicationControl.eclipsePlugin.appControlView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@c3ad9b" orientation="512" selectedTabId="org.eclipse.ui.views.PropertySheet" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<viewLayoutRec closeable="false" id="KUKAMapView.MapView"/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="KUKAMapView.MapView" appearance="2" expanded="2">
+<page content="KUKAMapView.MapView" label="Mobile Robot MapView"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@c3ad9b" ratio="0.7599372" ratioLeft="1453" ratioRight="459" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@ba9d8e" ratio="0.5995717" ratioLeft="560" ratioRight="374" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c3ad9b">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="com.kuka.roboticsAPI.navigation.applicationControl.eclipsePlugin.appControlView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2993806" ratioLeft="435" ratioRight="1018" relationship="2" relative="left"/>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<descriptor class="com.kuka.nav.core.swb.laserView.PerspectiveFactory" id="KUKALaserView.perspective" label="KUKA Laser Perspective"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="KUKALaserView.commonLaserControlView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="KUKAMapViewMaintenance"/>
+<view id="com.kuka.nav.eclipsePlugin.FailureEventView"/>
+<view id="KUKALaserView.LaserView"/>
+<fastViewBars/>
+<viewLayoutRec closeable="false" id="KUKALaserView.LaserView"/>
+<viewLayoutRec closeable="false" id="KUKALaserView.commonLaserControlView"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="KUKALaserView.LaserView" appearance="2" expanded="2">&#x0A;<page content="KUKALaserView.LaserView" label="LaserView 3D View"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@12ed858" ratio="0.7596817" ratioLeft="1432" ratioRight="453" relationship="2" relative="left">&#x0A;<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@18380a4" ratio="0.36949515" ratioLeft="344" ratioRight="587" relationship="4" relative="org.eclipse.ui.internal.ViewStack@12ed858">&#x0A;<folder activePageID="KUKAMapViewMaintenance" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="KUKAMapViewMaintenance" label="KUKA MapView Maintenance"/>
+<page content="com.kuka.nav.eclipsePlugin.FailureEventView" label="Failure Event History"/>
+<page content="KUKAMapView.MapView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7daf5b" ratio="0.47270215" ratioLeft="684" ratioRight="763" relationship="2" relative="left">&#x0A;<folder activePageID="KUKALaserView.commonLaserControlView" appearance="2" expanded="2">&#x0A;<page content="KUKALaserView.commonLaserControlView" label="LaserView Control"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.29577464" ratioLeft="21" ratioRight="50" relationship="2" relative="left"/>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/KMR_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/KMR_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/KMR_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/KMR_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/KMR_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/KMR_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NavServer_Everton/src/Workflow/KMR/Workflow.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KMR_Everton/src/application/AllowCharging.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" path="/NavServer_Everton/StationSetup.cat"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NavServer_Everton/src/Workflow/KMR/Workflow.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/KMR_Everton/src/RoboticsAPI.data.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/KMR_Everton/src/RoboticsAPI.config.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/NavServer_Everton/src/RoboticsAPI.data.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/KMR_Everton/src/RoboticsAPI.data.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/KMR_Everton/src/RoboticsAPI.config.xml"/>
+</editors>
+<item historyLabel="StationSetup.cat" index="0"/>
+<item historyLabel="StationSetup.cat" index="1"/>
+<item historyLabel="StationSetup.cat" index="2"/>
+<item historyLabel="StationSetup.cat" index="3"/>
+<item historyLabel="StationSetup.cat" index="4"/>
+<item historyLabel="StationSetup.cat" index="5"/>
+<item historyLabel="StationSetup.cat" index="6"/>
+<item historyLabel="StationSetup.cat" index="5"/>
+<item historyLabel="StationSetup.cat" index="7"/>
+<item historyLabel="StationSetup.cat" index="8"/>
+<item historyLabel="StationSetup.cat" index="7"/>
+<item historyLabel="StationSetup.cat" index="9"/>
+<item historyLabel="StationSetup.cat" index="10"/>
+<item historyLabel="Workflow.java" index="11">
+<position info="not_deleted" x="1621" y="0"/>
+</item>
+<item historyLabel="StationSetup.cat" index="12"/>
+<item historyLabel="AllowCharging.java" index="13">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="StationSetup.cat" index="14"/>
+<item historyLabel="Workflow.java" index="15">
+<position info="not_deleted" x="1621" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.data.xml" index="16">
+<position info="not_deleted" x="353730" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.config.xml" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.data.ProcessDataExample.xml" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.data.xml" index="16">
+<position/>
+</item>
+<item historyLabel="RoboticsAPI.data.ProcessDataExample.xml" index="18">
+<position info="not_deleted" x="0" y="1614"/>
+</item>
+<item historyLabel="RoboticsAPI.data.xml" index="16">
+<position info="not_deleted" x="814" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.data.xml" index="19">
+<position info="not_deleted" x="689" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.data.xml" index="20">
+<position info="not_deleted" x="338180" y="0"/>
+</item>
+<item historyLabel="RoboticsAPI.data.ProcessDataExample.xml" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="RoboticsAPI.config.xml" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@e6da7b"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@c3ad9b"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@ba9d8e"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.config.xml" tooltip="KMR_Everton/src/RoboticsAPI.config.xml">
+<persistable path="/KMR_Everton/src/RoboticsAPI.config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.ProcessDataExample.xml" tooltip="KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml">
+<persistable path="/KMR_Everton/src/RoboticsAPI.data.ProcessDataExample.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.xml" tooltip="KMR_Everton/src/RoboticsAPI.data.xml">
+<persistable path="/KMR_Everton/src/RoboticsAPI.data.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RoboticsAPI.data.xml" tooltip="NavServer_Everton/src/RoboticsAPI.data.xml">
+<persistable path="/NavServer_Everton/src/RoboticsAPI.data.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllowCharging.java" tooltip="KMR_Everton/src/application/AllowCharging.java">
+<persistable path="/KMR_Everton/src/application/AllowCharging.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" name="StationSetup.cat" tooltip="NavServer_Everton/StationSetup.cat">
+<persistable path="/NavServer_Everton/StationSetup.cat"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Workflow.java" tooltip="NavServer_Everton/src/Workflow/KMR/Workflow.java">
+<persistable path="/NavServer_Everton/src/Workflow/KMR/Workflow.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="configurationModel.eclipsePlugin.ConfigurationEditor" name="StationSetup.cat" tooltip="KMR_Everton/StationSetup.cat">
+<persistable path="/KMR_Everton/StationSetup.cat"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WalkAllPaths.java" tooltip="NavServer_Everton/src/Workflow/MoveStation/WalkAllPaths.java">
+<persistable path="/NavServer_Everton/src/Workflow/MoveStation/WalkAllPaths.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VisitAllStations.java" tooltip="NavServer_Everton/src/Workflow/MoveStation/VisitAllStations.java">
+<persistable path="/NavServer_Everton/src/Workflow/MoveStation/VisitAllStations.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RandomWalk.java" tooltip="NavServer_Everton/src/Workflow/MoveStation/RandomWalk.java">
+<persistable path="/NavServer_Everton/src/Workflow/MoveStation/RandomWalk.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoveToCapper.java" tooltip="NavServer_Everton/src/Workflow/MoveStation/MoveToCapper.java">
+<persistable path="/NavServer_Everton/src/Workflow/MoveStation/MoveToCapper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhotocatNodeIdFinePositioning.java" tooltip="NavServer_Everton/src/Workflow/KMR/MapConfiguration/PhotocatNodeIdFinePositioning.java">
+<persistable path="/NavServer_Everton/src/Workflow/KMR/MapConfiguration/PhotocatNodeIdFinePositioning.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FixSafety.java" tooltip="KMR_Everton/src/application/FixSafety.java">
+<persistable path="/KMR_Everton/src/application/FixSafety.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DisallowCharging.java" tooltip="KMR_Everton/src/application/DisallowCharging.java">
+<persistable path="/KMR_Everton/src/application/DisallowCharging.java"/>
+</file>
+</mruList>
+</workbench>

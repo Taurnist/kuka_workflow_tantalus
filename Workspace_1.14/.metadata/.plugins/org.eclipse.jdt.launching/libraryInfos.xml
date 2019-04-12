@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk" version="1.6.0_45">
+<bootpath>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\resources.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\rt.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\jsse.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\jce.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk" version="1.6.0_45">
+<bootpath>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre" version="1.6.0_45">
+<bootpath>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\KUKA Roboter GmbH\Sunrise Workbench\jdk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre" version="1.6.0_45">
+<bootpath>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\resources.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\rt.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\jsse.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\jce.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Sunrise1.14KMR\SunriseWorkbench-1.14.1.15-win32-x86\jdk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

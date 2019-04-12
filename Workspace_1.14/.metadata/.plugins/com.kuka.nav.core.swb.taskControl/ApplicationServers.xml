@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ApplicationServers>
+    <ApplicationServer IP="172.31.1.102" Name="AppServer" Port="8090"/>
+    <ApplicationServer IP="127.0.0.1" Name="AppServer" Port="8090"/>
+</ApplicationServers>
