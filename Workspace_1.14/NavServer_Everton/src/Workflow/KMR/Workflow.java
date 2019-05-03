@@ -114,12 +114,17 @@ public class Workflow extends MOAGraphMotionTasks {
 							
 							client.UpdateLastCommandedLocation(Location.Unknown);
 							
-							Location[] locations = new Location[]{Location.Quantos,
-											Location.Photocat, Location.LiquidHandlingSystem,
-											Location.GC, Location.Crossroads,
+							Location[] locations = new Location[]{
+									Location.Quantos,
+//									Location.Photocat,
+											Location.LiquidHandlingSystem,
+											Location.GC, 
+											Location.Crossroads,
 											Location.Sonicator,
-											Location.Cartridge, Location.DryingStation,
-											Location.InputStation, Location.ChargingStation,
+											Location.Cartridge,
+											Location.DryingStation,
+											Location.InputStation,
+											Location.ChargingStation,
 											Location.Vibratory_Photocat};
 
 							int random_number = (int) Math

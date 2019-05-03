@@ -179,6 +179,7 @@ public class SonicatorWorkflow extends WorkflowSuper {
 				int index = ((LBRPlaceVialInSonicator) task).getIndex();
 				try {
 					AssertNeutralVialHandlingPosition();
+					ShakeVial();
 					PlaceVialInSonicator(index);
 					client.updateStatus(true, null);
 					
@@ -239,7 +240,22 @@ public class SonicatorWorkflow extends WorkflowSuper {
 		}
 
 	}
+	private void ShakeVial() {
+		CartesianSineImpedanceControlMode shake_vial = 
+				
+				CartesianSineImpedanceControlMode.createSinePattern(CartDOF.ALL, 15.0,
+				3, 150.0); 
+				
+				
+		shake_vial.parametrize(CartDOF.X).setStiffness(1000);
+		shake_vial.parametrize(CartDOF.Y).setStiffness(1000);
+		shake_vial.parametrize(CartDOF.Z).setStiffness(5000);
+		shake_vial.parametrize(CartDOF.B).setStiffness(300);
+		shake_vial.parametrize(CartDOF.C).setStiffness(300);
 
+				
+		Gripper.getFrame("/spacer/tcp").move(positionHold(shake_vial, 3, TimeUnit.SECONDS));
+	}
 	protected void AssertDryPosition() throws RobotAssertionError {
 		double distance1 = lbr_iiwa.getCurrentCartesianPosition(
 			Gripper.getDefaultMotionFrame(), World.Current.getRootFrame())

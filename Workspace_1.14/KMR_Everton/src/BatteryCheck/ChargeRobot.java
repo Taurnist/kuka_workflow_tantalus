@@ -61,14 +61,8 @@ public class ChargeRobot extends RoboticsAPIApplication {
 		{
 			if (BatteryNotChargingWhileItShould()) {
 				logger
-					.error("WARNING: robot stoped charging detected eventhough SOC < 20 & ChargeEnabled=1");
-				logger.warn("Stop Charge");
-				StopCharging();
-				Thread.sleep(60 * 1000);
-
-				logger.warn("Start Charge");
-				StartCharging();
-				Thread.sleep(5*60 * 1000);
+					.error("WARNING: robot stoped charging detected eventhough SOC < 50 & ChargeEnabled=1");
+				break;
 			}
 			
 			Thread.sleep(5*1000);
@@ -84,7 +78,7 @@ public class ChargeRobot extends RoboticsAPIApplication {
 	
 	private boolean BatteryNotChargingWhileItShould() {
 		return BMS.getStatus() == 2 && BMS.getChargingEnable()
-			&& BMS.getStateOfCharge() < 20;
+			&& BMS.getStateOfCharge() < 50;
 	}
 
 	private void StopCharging() throws InterruptedException {

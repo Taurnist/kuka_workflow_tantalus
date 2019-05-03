@@ -68,7 +68,7 @@ public abstract class RackHandlingApplicationSuper
 		placeVialMode.parametrize(CartDOF.C).setStiffness(300);
 		
 		
-		pressRackStop = ForceCondition.createNormalForceCondition(emptyRack.getFrame("/spacer/tcp"), CoordinateAxis.Z, 50);
+
 
 		stiffMode = new CartesianImpedanceControlMode();
 		stiffMode.parametrize(CartDOF.X).setStiffness(5000);
@@ -195,12 +195,8 @@ public abstract class RackHandlingApplicationSuper
 		lbr_iiwa.detachAll();
 		emptyRack.attachTo(lbr_iiwa.getFlange());
 
-		rack_grasp = new Frame();
-		rack_grasp.setParent(manipulationRack.GetRackGrasp());
-		rack_grasp.setZ(rack_grasp.getZ() - 30);
-
 		emptyRack.getDefaultMotionFrame().move(
-			lin(rack_grasp).setMode(pullRackMode).setCartVelocity(20).setBlendingCart(10));
+			linRel(0,0,-30).setMode(pullRackMode).setCartVelocity(20).setBlendingCart(10));
 		
 		if (use_minimal_pre_grasp) {
 			emptyRack.getDefaultMotionFrame().move(
@@ -255,21 +251,24 @@ public abstract class RackHandlingApplicationSuper
 				.breakWhen(forceCondGrip));
 
 		if (cont.hasFired(forceCondGrip)) {
-			throw new UnexpectedCollisionDetected("Unexpected object detected");
+			throw new UnexpectedCollisionDetected("Rack Already there?");
 		}
 
-		// Correct position after impedance control
-		emptyRack.getFrame("/spacer/tcp").move(
-			lin(rack_grasp_collision_detectionPoint).setCartVelocity(50));
+//		// Correct position after impedance control
+//		emptyRack.getFrame("/spacer/tcp").move(
+//			lin(rack_grasp_collision_detectionPoint).setCartVelocity(50));
 
 		// Now we can place the rack 
-		emptyRack.getFrame("/spacer/tcp").move(
-			lin(manipulationRack.GetRackGrasp()).setCartVelocity(10));
-
 //		emptyRack.getFrame("/spacer/tcp").move(
-//			linRel(0,0,10).setCartVelocity(10).setMode(pressRackMode).breakWhen(pressRackStop));
-//		
+//			lin(manipulationRack.GetRackGrasp()).setCartVelocity(10));
+		pressRackStop = ForceCondition.createNormalForceCondition(emptyRack.getFrame("/spacer/tcp"), CoordinateAxis.Z, 50);
+		cont = emptyRack.getFrame("/spacer/tcp").move(
+			linRel(0,0,50).setCartVelocity(10).setMode(pressRackMode).breakWhen(pressRackStop));
 		
+//		if (!cont.hasFired(pressRackStop)) {
+//			throw new UnexpectedCollisionDetected("Could not collide with rackholder?!");
+//		}
+//		
 		GripperPrepareForGraspRack();
 
 		lbr_iiwa.detachAll();
@@ -279,9 +278,13 @@ public abstract class RackHandlingApplicationSuper
 		rack_grasp_pull_up.setParent(manipulationRack.GetRackGrasp());
 		rack_grasp_pull_up.setZ(rack_grasp_pull_up.getZ() - 30);
 
-		Gripper.getDefaultMotionFrame().move(
-			lin(rack_grasp_pull_up).setBlendingCart(10).setCartVelocity(20));
+//		Gripper.getDefaultMotionFrame().move(
+//			lin(rack_grasp_pull_up).setBlendingCart(10).setCartVelocity(20));
 
+		Gripper.getDefaultMotionFrame().move(
+				linRel(0,0,-30).setBlendingCart(10).setCartVelocity(20));
+
+		
 		if (use_minimal_pre_grasp) {
 			Gripper.getDefaultMotionFrame().move(
 				lin(manipulationRack.get_minimal_pre_grasp_position())
