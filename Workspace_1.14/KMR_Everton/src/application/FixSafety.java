@@ -77,7 +77,7 @@ public class FixSafety extends GripperApplicationsSuper {
               Math.toRadians(-20.0)));
             
             ArmToDrivePos();
-
+        	getApplicationData().getProcessData("lastCalibrationOfArm").setValue(1);
     }
 
     private void performMotion(JointPosition position)

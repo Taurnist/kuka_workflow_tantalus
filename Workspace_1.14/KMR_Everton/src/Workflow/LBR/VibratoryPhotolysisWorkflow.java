@@ -45,7 +45,7 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 	RackConfig manipulation_rack;
 	VibratoryPhotolysisRack photolysis_rack;
 	private CartesianImpedanceControlMode stiffMode;
-
+	private CartesianImpedanceControlMode vibrateMode;
 	@Override
 	public void initialize() {
 		super.initialize();
@@ -55,7 +55,18 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 		LinMoveVialSpeedSlow = 35;
 		PTPMoveSpeed = 0.5;
 		Blending = 0;
-
+		vibrateMode = 
+				
+		CartesianSineImpedanceControlMode.createSinePattern(CartDOF.ROT, 15.0,
+		0.5, 150.0); 
+		
+		
+		vibrateMode.parametrize(CartDOF.X).setStiffness(2000);
+		vibrateMode.parametrize(CartDOF.Y).setStiffness(2000);
+		vibrateMode.parametrize(CartDOF.Z).setStiffness(3000);
+		vibrateMode.parametrize(CartDOF.B).setStiffness(200);
+		vibrateMode.parametrize(CartDOF.C).setStiffness(200);
+		
 		//
 		// Station = Location.Vibratory_Photocat;
 
@@ -323,13 +334,17 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 				LinMoveVialSpeed));
 
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialGrasp(index)).setCartVelocity(
+			lin(photolysis_rack.GetVialGrasp(index)).setMode(vibrateMode).setCartVelocity(
 				LinMoveVialSpeedSlow));
+		
+		Gripper.getFrame("/spacer/tcp").move(
+				lin(photolysis_rack.GetVialGrasp(index)).setCartVelocity(
+					LinMoveVialSpeedSlow));
 
 		GripperGraspVial();
 
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialPreGrasp(index)).setCartVelocity(
+			lin(photolysis_rack.GetVialPreGrasp(index)).setMode(vibrateMode).setCartVelocity(
 				LinMoveVialSpeedSlow));
 
 		Gripper.getFrame("/spacer/tcp").move(
@@ -346,7 +361,7 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 				LinMoveVialSpeed));
 
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialGrasp(index)).setCartVelocity(
+			lin(photolysis_rack.GetVialGrasp(index)).setMode(vibrateMode).setCartVelocity(
 				LinMoveVialSpeedSlow));
 
 		GripperPrepareForGraspVial();

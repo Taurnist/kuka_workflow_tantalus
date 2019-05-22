@@ -131,7 +131,7 @@ public class PositionAndGMSReferencing extends GripperApplicationsSuper {
             getLogger().info("Moving to home position");  
         	
     		lbr_iiwa.getFlange().move(ptp(getApplicationData().getFrame("/DrivePos")).setJointVelocityRel(fastjoggingVelocity));
-    	
+    		getApplicationData().getProcessData("lastCalibrationOfArm").setValue((new Date()).getTime()+"");
     		
         }
     }
