@@ -352,13 +352,13 @@ public class SonicatorWorkflow extends WorkflowSuper {
 		result.setParent(get_position(i));
 		result.setZ(result.getZ() - 80); // IN POINT FRAME
 		return result;
-	}
+	} 
 
 	public ObjectFrame get_position(int i) throws Exception {
-		if(i >=1 && i <= 18 && i== 9 && i == 10)
+		if(i <0 || i >17 || i== 8 || i == 9)
 			throw new InputMismatchException();
 		
-		int vial_number = i;
+		int vial_number = i+1;
 	
 		return getApplicationData().getFrame(
 			"/Station/" + Station.getPointSetName()

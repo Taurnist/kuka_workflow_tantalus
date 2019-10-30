@@ -411,10 +411,14 @@ public class LiquidStationWorkflow extends WorkflowSuper {
 		Gripper.getFrame("/spacer/tcp/flipped_liquid").move(
 			lin(vial_grasp_station).setCartVelocity(LinMoveVialSpeedSlow));
 
-		GripperPrepareForGraspVial();
+		GripperPrepareForGraspRack();
 
+		Frame post_grasp =  new Frame(vial_grasp_station);
+		 
+		post_grasp = post_grasp.setZ(post_grasp.getZ() - 5);
+	
 		Gripper.getFrame("/spacer/tcp/flipped_liquid").move(
-			lin(vial_pre_grasp_station).setCartVelocity(LinMoveVialSpeedSlow));
+			lin(post_grasp).setCartVelocity(LinMoveVialSpeedSlow));
 
 		Gripper.getFrame("/spacer/tcp/flipped_liquid").move(
 			lin(pre_station).setCartVelocity(LinMoveVialSpeed));
@@ -422,7 +426,7 @@ public class LiquidStationWorkflow extends WorkflowSuper {
 	private void GraspVialInLiquidStation(int i)
 		throws GripperFailException {
 
-		GripperPrepareForGraspVial();
+		GripperPrepareForGraspRack();
 
 		Gripper
 			.getFrame("/spacer/tcp/flipped_liquid")

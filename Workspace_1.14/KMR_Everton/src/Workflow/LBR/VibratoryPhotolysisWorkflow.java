@@ -1,5 +1,5 @@
 package Workflow.LBR;
-
+import com.kuka.roboticsAPI.geometricModel.Frame;
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
@@ -13,12 +13,16 @@ import Workflow.LBR.Action.VibratoryPhotolysisRack;
 import Workflow.LBR.Messages.*;
 import Workflow.LBR.WorkflowSuper.ArmPoseEnum;
 
+import application.util.ObjectFrameUtilsVeins11;
+
 import com.kuka.roboticsAPI.applicationModel.RoboticsAPIApplication;
 import static com.kuka.roboticsAPI.motionModel.BasicMotions.*;
 
 import com.kuka.roboticsAPI.deviceModel.LBR;
 import com.kuka.roboticsAPI.deviceModel.kmp.KmpOmniMove;
+import com.kuka.roboticsAPI.geometricModel.AbstractFrame;
 import com.kuka.roboticsAPI.geometricModel.CartDOF;
+import com.kuka.roboticsAPI.geometricModel.ObjectFrame;
 import com.kuka.roboticsAPI.geometricModel.World;
 import com.kuka.roboticsAPI.motionModel.controlModeModel.CartesianImpedanceControlMode;
 import com.kuka.roboticsAPI.motionModel.controlModeModel.CartesianSineImpedanceControlMode;
@@ -43,7 +47,7 @@ import com.kuka.roboticsAPI.motionModel.controlModeModel.CartesianSineImpedanceC
  */
 public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 	RackConfig manipulation_rack;
-	VibratoryPhotolysisRack photolysis_rack;
+
 	private CartesianImpedanceControlMode stiffMode;
 	private CartesianImpedanceControlMode vibrateMode;
 	@Override
@@ -63,7 +67,7 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 		
 		vibrateMode.parametrize(CartDOF.X).setStiffness(2000);
 		vibrateMode.parametrize(CartDOF.Y).setStiffness(2000);
-		vibrateMode.parametrize(CartDOF.Z).setStiffness(3000);
+		vibrateMode.parametrize(CartDOF.Z).setStiffness(2000);
 		vibrateMode.parametrize(CartDOF.B).setStiffness(200);
 		vibrateMode.parametrize(CartDOF.C).setStiffness(200);
 		
@@ -90,13 +94,7 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 					"/Station/" + Station.getPointSetName()
 						+ "/Cube_Corner/rack_grasp"), logger, false, true, false);
 
-			photolysis_rack = new VibratoryPhotolysisRack(getApplicationData()
-				.getFrame(
-					"/Station/" + Station.getPointSetName() + "/Cube_Corner/P1"),
-				getApplicationData().getFrame(
-					"/Station/" + Station.getPointSetName() + "/Cube_Corner/P4"),
-				getApplicationData().getFrame(
-					"/Station/" + Station.getPointSetName() + "/Cube_Corner/P16"));
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -330,21 +328,21 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 
 		GripperPrepareForGraspVial();
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialPreGrasp(index)).setCartVelocity(
+			lin(GetVialPreGrasp(index)).setCartVelocity(
 				LinMoveVialSpeed));
 
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialGrasp(index)).setMode(vibrateMode).setCartVelocity(
+			lin(GetVialGrasp(index)).setMode(vibrateMode).setCartVelocity(
 				LinMoveVialSpeedSlow));
 		
 		Gripper.getFrame("/spacer/tcp").move(
-				lin(photolysis_rack.GetVialGrasp(index)).setCartVelocity(
+				lin(GetVialGrasp(index)).setCartVelocity(
 					LinMoveVialSpeedSlow));
 
 		GripperGraspVial();
 
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialPreGrasp(index)).setMode(vibrateMode).setCartVelocity(
+			lin(GetVialPreGrasp(index)).setMode(vibrateMode).setCartVelocity(
 				LinMoveVialSpeedSlow));
 
 		Gripper.getFrame("/spacer/tcp").move(
@@ -355,20 +353,20 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 	}
 
 	private void PlaceInPhotolysisBuffer(int index) {
-
+		
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialPreGrasp(index)).setCartVelocity(
+			lin(GetVialPreGrasp(index)).setCartVelocity(
 				LinMoveVialSpeed));
 
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialGrasp(index)).setMode(vibrateMode).setCartVelocity(
+			lin(GetVialGrasp(index)).setMode(vibrateMode).setCartVelocity(
 				LinMoveVialSpeedSlow));
 
 		GripperPrepareForGraspVial();
 
 		GripperPrepareForGraspVial();
 		Gripper.getFrame("/spacer/tcp").move(
-			lin(photolysis_rack.GetVialPreGrasp(index)).setCartVelocity(
+			lin(GetVialPreGrasp(index)).setCartVelocity(
 				LinMoveVialSpeedSlow));
 
 		Gripper.getFrame("/spacer/tcp").move(
@@ -376,6 +374,22 @@ public class VibratoryPhotolysisWorkflow extends WorkflowSuper {
 				getApplicationData().getFrame(
 					"/Station/" + Station.getPointSetName()
 						+ "/Cube_Corner/neutral")).setCartVelocity(LinMoveVialSpeed));
+
+	}
+
+	private AbstractFrame GetVialPreGrasp(int index) {
+		Frame result =  new Frame(GetVialGrasp(index));
+		 
+		result = result.setZ(result.getZ() - 50);
+		
+		return result;
+	}
+
+	private ObjectFrame GetVialGrasp(int index) {
+		int corrected_index = index+1;
+		return getApplicationData().getFrame(
+				"/Station/" + Station.getPointSetName()
+					+ "/Cube_Corner/P" + corrected_index);
 
 	}
 

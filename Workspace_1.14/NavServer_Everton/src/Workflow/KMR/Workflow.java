@@ -223,7 +223,7 @@ public class Workflow extends MOAGraphMotionTasks {
 								LOG.info("StartLBR");
 								try {
 									StartLBRR();
-
+									lastCheck = null;
 									result = true;
 								} catch (Exception e) {
 									result = false;

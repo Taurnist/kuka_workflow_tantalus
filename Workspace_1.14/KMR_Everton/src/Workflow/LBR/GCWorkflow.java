@@ -122,6 +122,7 @@ public class GCWorkflow extends WorkflowSuper {
 	}
 
 	private void PressParkHeadspaceButton() {
+		GripperPrepareForSixPointCalibration();
 		Gripper.getFrame("/spacer/tcp").move(
 			ptp(
 				getApplicationData().getFrame(

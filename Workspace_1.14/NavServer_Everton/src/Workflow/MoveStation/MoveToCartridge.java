@@ -8,6 +8,6 @@ import Workflow.KMR.Util.MOAGraphMotionTasks;
 public class MoveToCartridge extends MOAGraphMotionTasks {
 	@Override
 	public void run() throws Exception {
-		GoAndFinePosition(PhotocatNodeIdFinePositioning.Cartridge);
+		GoAndFinePosition(PhotocatNodeIdFinePositioning.Cartridge); 
 	}
 }

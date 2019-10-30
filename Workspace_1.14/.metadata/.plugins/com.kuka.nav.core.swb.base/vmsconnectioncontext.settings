@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="vmsconnectioncontext">
+	<section name="172.31.1.102:8090">
+		<item value="6" key="mapid"/>
+		<list key="layercrap">
+			<item value="Location"/>
+			<item value="true"/>
+			<item value="FineLocalizationVisualizationModel"/>
+			<item value="true"/>
+			<item value="VirtualPath"/>
+			<item value="true"/>
+			<item value="TopologyGraph"/>
+			<item value="true"/>
+			<item value="RobotVirtualLine"/>
+			<item value="true"/>
+			<item value="RobotPathData"/>
+			<item value="true"/>
+			<item value="RoadMap"/>
+			<item value="true"/>
+			<item value="RobotPositionOrderShadow"/>
+			<item value="true"/>
+			<item value="RobotLaserData"/>
+			<item value="true"/>
+			<item value="RobotLoad"/>
+			<item value="true"/>
+			<item value="RobotTarget"/>
+			<item value="true"/>
+			<item value="TargetLink"/>
+			<item value="true"/>
+			<item value="Robot"/>
+			<item value="true"/>
+			<item value="RobotLabel"/>
+			<item value="false"/>
+			<item value="LocalizedObject"/>
+			<item value="true"/>
+			<item value="MapZone"/>
+			<item value="true"/>
+			<item value="FineLocalizationZone"/>
+			<item value="true"/>
+			<item value="CovarianceEllipse"/>
+			<item value="true"/>
+			<item value="CoordinateLine"/>
+			<item value="true"/>
+		</list>
+	</section>
+</section>
